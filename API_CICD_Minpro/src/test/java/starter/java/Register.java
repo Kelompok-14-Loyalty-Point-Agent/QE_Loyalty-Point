@@ -10,11 +10,11 @@ import org.json.simple.JSONObject;
 
 public class Register {
 
-    protected String url = "https://altashop-api.fly.dev/api/";
+    protected String url = "http://13.229.84.45";
 
     @Step("I set POST api endpoints register")
     public String setPostApiEndpointRegister() {
-        return url + "auth/register";
+        return url + "/auth/register";
     }
 
     ///POSITIF
@@ -27,8 +27,8 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("password", "123456");
-        requestBody.put("fullname", "StevenJatmiko");
+        requestBody.put("password", "customer123");
+        requestBody.put("fullname", "rinimaulida");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -70,7 +70,7 @@ public class Register {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "stevenmiko@gmail.com");
         requestBody.put("password", "steven123");
-        requestBody.put("fullname", "steven");
+        requestBody.put("fullname", "rini");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -108,9 +108,9 @@ public class Register {
 //        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
 //    }
 
-    @Step("I receive valid HTTP response code 200 register")
+    @Step("I receive valid HTTP response code 201 register")
     public void receiveValidHttp200Register() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(201));
     }
 
     @Step("I receive valid HTTP response code 400 register")

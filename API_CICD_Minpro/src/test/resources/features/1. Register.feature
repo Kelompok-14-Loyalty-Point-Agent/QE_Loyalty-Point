@@ -7,7 +7,7 @@ Feature: Register
   Scenario: POST - Register with valid data
     Given I set POST api endpoints register
     When I send POST HTTP request register
-    Then I receive valid HTTP response code 200 register
+    Then I receive valid HTTP response code 201 register
 
   Scenario: POST - Register without fullname
     Given I set POST api endpoints register
