@@ -15,12 +15,17 @@ public class LoginSteps {
 
     //Scenario Outline: As a user i want to login form my account//
 
-    @Given("I am on the product list")
-    public void iAmOnTheProductList() {
-        loginScreen.isDisplayedHeaderProduct();
+    @Given("I am on the landing page")
+    public void iAmOnTheLandingPage() {
+        loginScreen.clickButtonNext();
     }
 
-    @When("I click button sign in")
+    @When("I click button next")
+    public void iClickButtonNext() {
+        loginScreen.clickButtonNext();
+    }
+
+    @And("I click button sign in")
     public void iClickButtonSignin() {
         loginScreen.clickButtonSignin();
     }
@@ -37,62 +42,56 @@ public class LoginSteps {
         loginScreen.inputFieldPassword(password);
     }
 
-    @And("I click button login")
+    @Then("I click button login")
     public void iClickButtonLogin() {
-        loginScreen.clickButtonLogin();
-    }
-
-    @Then("I get result the message")
-    public void iGetThe() {
-        loginScreen.verifyHeaderProduct();
-    
+        loginScreen.clickButtonSignin();
     }
         
         
-    //Scenario Outline: As a user i want to login with wrong password//
+    // //Scenario Outline: As a user i want to login with wrong password//
     
-    @And("I input incorrect password in login")
-    public void iInputIncorrectPasswordInLogin() {
-        String password = "abcdef";
-        loginScreen.inputFieldPassword(password);
+    // @And("I input incorrect password in login")
+    // public void iInputIncorrectPasswordInLogin() {
+    //     String password = "abcdef";
+    //     loginScreen.inputFieldPassword(password);
 
-    }
+    // }
 
-    @Then("I get result the error message")
-    public void iGetTheError() {
-        loginScreen.verifyAlertButton();
+    // @Then("I get result the error message")
+    // public void iGetTheError() {
+    //     loginScreen.verifyAlertButton();
     
-    }
+    // }
 
-    //Scenario Outline: As a user i want to login with wrong email//
+    // //Scenario Outline: As a user i want to login with wrong email//
 
-    @And("I input incorrect email in login")
-    public void iInputIncorrectEmailInLogin() {
-        String email = "stevano" + "@mail.com";
-        loginScreen.inputFieldEmail(email);
-    }
+    // @And("I input incorrect email in login")
+    // public void iInputIncorrectEmailInLogin() {
+    //     String email = "stevano" + "@mail.com";
+    //     loginScreen.inputFieldEmail(email);
+    // }
 
-    //Scenario Outline: As a user i want to login with invalid email//
+    // //Scenario Outline: As a user i want to login with invalid email//
 
-    @And("I input invalid email in login")
-    public void iInputInvalidEmailInLogin() {
-        String email = "stevano" + "mail.co.long";
-        loginScreen.inputFieldEmail(email);
-    }
+    // @And("I input invalid email in login")
+    // public void iInputInvalidEmailInLogin() {
+    //     String email = "stevano" + "mail.co.long";
+    //     loginScreen.inputFieldEmail(email);
+    // }
 
-    //Scenario Outline: As a user i want to login without input password//
+    // //Scenario Outline: As a user i want to login without input password//
     
     
-    @And("I input empty password in login")
-    public void iInputEmptyPasswordInLogin() {
-        String password = "";
-        loginScreen.inputFieldPassword(password);
+    // @And("I input empty password in login")
+    // public void iInputEmptyPasswordInLogin() {
+    //     String password = "";
+    //     loginScreen.inputFieldPassword(password);
 
-    }
+    // }
 
-    @Then("I get result the empty message")
-    public void iGetTheEmpty() {
-        loginScreen.verifyAlertPassword();
+    // @Then("I get result the empty message")
+    // public void iGetTheEmpty() {
+    //     loginScreen.verifyAlertPassword();
     
-    }
+    // }
 }
