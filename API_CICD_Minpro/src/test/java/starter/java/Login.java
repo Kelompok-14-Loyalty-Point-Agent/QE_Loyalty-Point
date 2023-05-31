@@ -8,18 +8,19 @@ import org.json.simple.JSONObject;
 
 public class Login {
 
-    protected String url = "https://altashop-api.fly.dev/api/";
+    protected String url = "http://13.229.84.45";
 
 
     @Step("I set POST api endpoints login")
     public String setPostApiEndpointLogin() {
-        return url + "auth/login";
+        return url + "/users/login";
     }
 
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "stevennn@gmail.com");
+        requestBody.put("email", "admin@example.com");
+        requestBody.put("fullname", "rinijaya");
         requestBody.put("password", "steven123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -31,6 +32,7 @@ public class Login {
     public void sendPostHttpRequestLogin1() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "steven@gmail.com");
+        requestBody.put("fullname", "admin");
         requestBody.put("password", "steven1");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -40,6 +42,7 @@ public class Login {
     public void sendPostHttpRequestLogin2() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", " ");
+        requestBody.put("fullname", "admin");
         requestBody.put("password", "steven123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -49,6 +52,7 @@ public class Login {
     public void sendPostHttpRequestLogin3() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "someone@mail.com");
+        requestBody.put("fullname", "admin");
         requestBody.put("password", " ");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -59,6 +63,7 @@ public class Login {
         JSONObject requestBody = new JSONObject();
         requestBody.put(" ", " ");
         requestBody.put(" ", " ");
+        requestBody.put(" ", " ");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
     }
@@ -67,6 +72,7 @@ public class Login {
     public void sendPostHttpRequestLogin5() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", " ");
+        requestBody.put("fullname", " ");
         requestBody.put("password", " ");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
