@@ -12,7 +12,15 @@ public class RegisterScreen extends BasePageObject {
 
     public String name = createRandomName();
     
-    By textRegister(){ 
+    // By textRegister(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Create a new account\"]");
+    // }
+
+    By buttonSkip() { 
+        return MobileBy.xpath("//android.view.View[@content-desc=\"Skip\"]");
+    }
+
+    By buttonCreateNewAccount() { 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Create a new account\"]");
     }
 
@@ -36,27 +44,36 @@ public class RegisterScreen extends BasePageObject {
         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Create an Account\"]");
     }
 
-    By fieldAlertFullname(){ 
-        return MobileBy.xpath("//android.view.View[@content-desc=\"fullname can not empty\"]");
-    }
 
-    By fieldAlertEmail(){ 
-        return MobileBy.xpath("//android.view.View[@content-desc=\"email can not empty\"]");
-    }
+    // By fieldAlertFullname(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"fullname can not empty\"]");
+    // }
 
-    By fieldAlertPassword(){ 
-        return MobileBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
-    }
+    // By fieldAlertEmail(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"email can not empty\"]");
+    // }
+
+    // By fieldAlertPassword(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
+    // }
     
-    By buttonAlert(){ 
-        return MobileBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
+    // By buttonAlert(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
+    // }
+
+    // public void clickTextRegister(){ 
+    //     click(textRegister());
+    // }
+
+    public void clickButtonCreateNewAccount(){ 
+        click(buttonCreateNewAccount());
     }
 
-    public void clickTextRegister(){ 
-        click(textRegister());
+    public void clickButtonSkip(){ 
+        click(buttonSkip());
     }
 
-    public void inputFieldFullName(String fullname) {
+    public void inputFullName(String fullname) {
         Faker faker = new Faker();
         name = faker.name().fullName();
         click(fieldFullName());
@@ -64,11 +81,11 @@ public class RegisterScreen extends BasePageObject {
         onType(fieldFullName(), createRandomName());
     }
 
-    public void inputEmptyFullName(String fullname) {
-        click(fieldFullName());
-        clear(fieldFullName());
-        sendKeys(fieldFullName(),fullname);
-    }
+    // public void inputEmptyFullName(String fullname) {
+    //     click(fieldFullName());
+    //     clear(fieldFullName());
+    //     sendKeys(fieldFullName(),fullname);
+    // }
 
     public void inputEmail(String email){
         click(fieldEmail());
@@ -76,11 +93,11 @@ public class RegisterScreen extends BasePageObject {
         onType(fieldEmail(), createRandomName() + "@gmail.com");
     }
 
-    public void inputEmptyEmail(String email){
-        click(fieldEmail());
-        clear(fieldEmail());
-        sendKeys(fieldEmail(),email);
-    }
+    // public void inputEmptyEmail(String email){
+    //     click(fieldEmail());
+    //     clear(fieldEmail());
+    //     sendKeys(fieldEmail(),email);
+    // }
 
     public void inputPassword(String password){
         click(fieldPassword());
@@ -88,14 +105,20 @@ public class RegisterScreen extends BasePageObject {
         sendKeys(fieldPassword(),password);
     }
 
-    public void inputEmptyPassword(String password){
-        click(fieldPassword());
-        clear(fieldPassword());
+    // public void inputEmptyPassword(String password){
+    //     click(fieldPassword());
+    //     clear(fieldPassword());
+    //     sendKeys(fieldPassword(),password);
+    // }
+
+    public void inputConfrimPassword(String password){
+        click(fieldConfrimPassword());
+        clear(fieldConfrimPassword());
         sendKeys(fieldPassword(),password);
     }
 
-    public void clickButtonRegister(){ 
-        click(buttonRegister());
+    public void clickButtonCreateAnAccount(){ 
+        click(buttonCreateAnAccount());
     }
 
     // public void verifyAlertFullname(){ 
