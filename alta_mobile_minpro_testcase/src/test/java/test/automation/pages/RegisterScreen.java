@@ -1,117 +1,144 @@
-// package test.automation.pages;
+package test.automation.pages;
 
-// import io.appium.java_client.MobileBy;
-// import net.thucydides.core.annotations.Step;
+import io.appium.java_client.MobileBy;
+import net.thucydides.core.annotations.Step;
 
-// import org.junit.jupiter.api.Assertions;
-// import org.openqa.selenium.By;
-// import test.automation.pageobject.BasePageObject;
-// import com.github.javafaker.Faker;
+import org.junit.jupiter.api.Assertions;
+import org.openqa.selenium.By;
+import test.automation.pageobject.BasePageObject;
+import com.github.javafaker.Faker;
 
-// public class RegisterScreen extends BasePageObject {
+public class RegisterScreen extends BasePageObject {
 
-//     public String name = createRandomName();
+    public String name = createRandomName();
     
-//     By textRegister(){ 
-//         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Register\"]");
-//     }
+    // By textRegister(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Create a new account\"]");
+    // }
 
-//     By fieldFullName(){ 
-//         return MobileBy.xpath("//android.view.View/android.widget.EditText[1]");
-//     }
+    By buttonSkip() { 
+        return MobileBy.xpath("//android.view.View[@content-desc=\"Skip\"]");
+    }
 
-//     By fieldEmail(){ 
-//         return MobileBy.xpath("//android.view.View/android.widget.EditText[2]");
-//     }
+    By buttonCreateNewAccount() { 
+        return MobileBy.xpath("//android.view.View[@content-desc=\"Create a new account\"]");
+    }
 
-//     By fieldPassword() { 
-//         return MobileBy.xpath("//android.view.View/android.widget.EditText[3]");
-//     }
+    By fieldFullName(){ 
+        return MobileBy.xpath("//android.view.View/android.widget.EditText[1]");
+    }
 
-//     By buttonRegister() { 
-//         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Register\"]");
-//     }
+    By fieldEmail(){ 
+        return MobileBy.xpath("//android.view.View/android.widget.EditText[2]");
+    }
 
-//     By fieldAlertFullname(){ 
-//         return MobileBy.xpath("//android.view.View[@content-desc=\"fullname can not empty\"]");
-//     }
+    By fieldPassword() { 
+        return MobileBy.xpath("//android.view.View/android.widget.EditText[3]");
+    }
 
-//     By fieldAlertEmail(){ 
-//         return MobileBy.xpath("//android.view.View[@content-desc=\"email can not empty\"]");
-//     }
+    By fieldConfrimPassword() { 
+        return MobileBy.xpath("//android.view.View/android.widget.EditText[4]");
+    }
 
-//     By fieldAlertPassword(){ 
-//         return MobileBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
-//     }
+    By buttonCreateAnAccount() { 
+        return MobileBy.xpath("//android.widget.Button[@content-desc=\"Create an Account\"]");
+    }
+
+
+    // By fieldAlertFullname(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"fullname can not empty\"]");
+    // }
+
+    // By fieldAlertEmail(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"email can not empty\"]");
+    // }
+
+    // By fieldAlertPassword(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
+    // }
     
-//     By buttonAlert(){ 
-//         return MobileBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
-//     }
+    // By buttonAlert(){ 
+    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
+    // }
 
-//     public void clickTextRegister(){ 
-//         click(textRegister());
-//     }
+    // public void clickTextRegister(){ 
+    //     click(textRegister());
+    // }
 
-//     public void inputFieldFullName(String fullname) {
-//         Faker faker = new Faker();
-//         name = faker.name().fullName();
-//         click(fieldFullName());
-//         clear(fieldFullName());
-//         onType(fieldFullName(), createRandomName());
-//     }
+    public void clickButtonCreateNewAccount(){ 
+        click(buttonCreateNewAccount());
+    }
 
-//     public void inputEmptyFullName(String fullname) {
-//         click(fieldFullName());
-//         clear(fieldFullName());
-//         sendKeys(fieldFullName(),fullname);
-//     }
+    public void clickButtonSkip(){ 
+        click(buttonSkip());
+    }
 
-//     public void inputEmail(String email){
-//         click(fieldEmail());
-//         clear(fieldEmail());
-//         onType(fieldEmail(), createRandomName() + "@gmail.com");
-//     }
+    public void inputFullName(String fullname) {
+        Faker faker = new Faker();
+        name = faker.name().fullName();
+        click(fieldFullName());
+        clear(fieldFullName());
+        onType(fieldFullName(), createRandomName());
+    }
 
-//     public void inputEmptyEmail(String email){
-//         click(fieldEmail());
-//         clear(fieldEmail());
-//         sendKeys(fieldEmail(),email);
-//     }
+    // public void inputEmptyFullName(String fullname) {
+    //     click(fieldFullName());
+    //     clear(fieldFullName());
+    //     sendKeys(fieldFullName(),fullname);
+    // }
 
-//     public void inputPassword(String password){
-//         click(fieldPassword());
-//         clear(fieldPassword());
-//         sendKeys(fieldPassword(),password);
-//     }
+    public void inputEmail(String email){
+        click(fieldEmail());
+        clear(fieldEmail());
+        onType(fieldEmail(), createRandomName() + "@gmail.com");
+    }
 
-//     public void inputEmptyPassword(String password){
-//         click(fieldPassword());
-//         clear(fieldPassword());
-//         sendKeys(fieldPassword(),password);
-//     }
+    // public void inputEmptyEmail(String email){
+    //     click(fieldEmail());
+    //     clear(fieldEmail());
+    //     sendKeys(fieldEmail(),email);
+    // }
 
-//     public void clickButtonRegister(){ 
-//         click(buttonRegister());
-//     }
+    public void inputPassword(String password){
+        click(fieldPassword());
+        clear(fieldPassword());
+        sendKeys(fieldPassword(),password);
+    }
 
-//     public void verifyAlertFullname(){ 
-//         Assertions.assertTrue(find(fieldAlertFullname()).isDisplayed());
-//     }
+    // public void inputEmptyPassword(String password){
+    //     click(fieldPassword());
+    //     clear(fieldPassword());
+    //     sendKeys(fieldPassword(),password);
+    // }
 
-//     public void verifyAlertEmail(){ 
-//         Assertions.assertTrue(find(fieldAlertEmail()).isDisplayed());
-//     }
+    public void inputConfrimPassword(String password){
+        click(fieldConfrimPassword());
+        clear(fieldConfrimPassword());
+        sendKeys(fieldPassword(),password);
+    }
 
-//     public void verifyAlertPassword(){ 
-//         Assertions.assertTrue(find(fieldAlertPassword()).isDisplayed());
-//     }
+    public void clickButtonCreateAnAccount(){ 
+        click(buttonCreateAnAccount());
+    }
 
-//     public void verifyAlertButton() { 
-//         Assertions.assertTrue(find(buttonAlert()).isDisplayed());
-//     }
+    // public void verifyAlertFullname(){ 
+    //     Assertions.assertTrue(find(fieldAlertFullname()).isDisplayed());
+    // }
 
-//     public String createRandomName(){
-//         Faker faker = new Faker();
-//         return faker.name().firstName();
-//     }
-// }
+    // public void verifyAlertEmail(){ 
+    //     Assertions.assertTrue(find(fieldAlertEmail()).isDisplayed());
+    // }
+
+    // public void verifyAlertPassword(){ 
+    //     Assertions.assertTrue(find(fieldAlertPassword()).isDisplayed());
+    // }
+
+    // public void verifyAlertButton() { 
+    //     Assertions.assertTrue(find(buttonAlert()).isDisplayed());
+    // }
+
+    public String createRandomName(){
+        Faker faker = new Faker();
+        return faker.name().firstName();
+    }
+}

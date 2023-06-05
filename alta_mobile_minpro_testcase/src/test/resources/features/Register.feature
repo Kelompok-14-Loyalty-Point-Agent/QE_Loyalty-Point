@@ -1,17 +1,17 @@
-# Feature: Register
-#   As a user
-#   I want to register account
-#   So that i can success register account
+Feature: Register
+  As a user
+  I want to register account
+  So that i can success register account
 
 
-# Scenario Outline: As a user i want to register account with valid data
-#     Given I am on the product list
-#     When I click button sign in
-#     And I click text register
-#     And I input correct fullname in register
-#     And I input correct email in register
-#     And I input correct password in register
-#     And I click register button
+Scenario Outline: As a user i want to register account with valid data
+    Given I am on the get point page
+    When I click button create a new account 
+    And I input correct fullname in register
+    And I input correct email in register
+    And I input correct password in register
+    And I input correct confirm password in register
+    Then I click create an account button
 #     Then I should be redirected to product list
 
 # Scenario Outline: As a user i want to register account with invalid fullname
@@ -37,9 +37,9 @@
 
 # Scenario Outline: As a user i want to register account with invalid password
 
-#     Given I am on the product list
-#     When I click button sign in
-#     And I click text register 
+#     Given I am on the landing page
+#     When I click button next
+#     And I click button sign in 
 #     And I input correct fullname in register
 #     And I input correct email in register
 #     And I input invalid password in register

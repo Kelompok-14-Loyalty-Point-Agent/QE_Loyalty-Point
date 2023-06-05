@@ -1,51 +1,61 @@
-// package test.automation.stepdefinitions;
+package test.automation.stepdefinitions;
 
-// import io.cucumber.java.en.And;
-// import io.cucumber.java.en.Given;
-// import io.cucumber.java.en.Then;
-// import io.cucumber.java.en.When;
-// import net.thucydides.core.annotations.Steps;
-// import org.junit.Assert;
-// import test.automation.pages.RegisterScreen;
-// import test.automation.pages.LoginScreen;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import net.thucydides.core.annotations.Steps;
+import org.junit.Assert;
+import test.automation.pages.RegisterScreen;
+import test.automation.pages.LoginScreen;
 
-// public class RegisterSteps {
+public class RegisterSteps {
     
-//     LoginScreen loginScreen = new LoginScreen();
-//     RegisterScreen registerScreen = new RegisterScreen();
+    LoginScreen loginScreen = new LoginScreen();
+    RegisterScreen registerScreen = new RegisterScreen();
 
-//     //Scenario Outline: As a user i want to register account with valid data//
+    //Scenario Outline: As a user i want to register account with valid data//
 
-//     @And("I click text register")
-//     public void iClickTextRegister() {
-//         registerScreen.clickTextRegister();
-//     }
+    @Given("I am on the get point page")
+    public void iAmOnTheLandingPage() {
+        registerScreen.clickButtonSkip();
+    }
 
-//     @And("I input correct fullname in register")
-//     public void iInputFieldFullname() {
-//         registerScreen.inputFieldFullName("test satu");
-//     }
+    @When("I click button create a new account")
+    public void iClickButtonCreateNewAccount() {
+        registerScreen.clickButtonCreateNewAccount();
+    }
 
-//     @And("I input correct email in register")
-//     public void iInputFieldEmail() {
-//         registerScreen.inputEmail("testsatu@mail.com");
-//     }
+    @And("I input correct fullname in register")
+    public void iInputFieldFullname() {
+        registerScreen.inputFullName("steven jatmiko");
+    }
 
-//     @And("I input correct password in register")
-//     public void iInputFieldPassword() {
-//         registerScreen.inputPassword("123123");
-//     }
+    @And("I input correct email in register")
+    public void iInputFieldEmail() {
+        registerScreen.inputEmail("steven@jatmiko.com");
+    }
 
-//     @And("I click register button")
-//     public void iClickRegisterButton() {
-//         registerScreen.clickButtonRegister();
-//     }
+    @And("I input correct password in register")
+    public void iInputFieldPassword() {
+        registerScreen.inputPassword("123");
+    }
 
-//     @Then("I should be redirected to product list")
-//     public void validateRegisterSuccess() {
-//         loginScreen.isDisplayedHeaderProduct();
+    @And("I input correct confirm password in register")
+    public void iInputFieldConfirmPassword() {
+        registerScreen.inputPassword("123");
+    }
+
+    @Then("I click create an account button")
+    public void iClickCreateAnAccountButton() {
+        registerScreen.clickButtonCreateAnAccount();
+    }
+
+    // @Then("I should be redirected to product list")
+    // public void validateRegisterSuccess() {
+    //     loginScreen.isDisplayedHeaderProduct();
                     
-//     }
+    // }
 
 //     //Scenario Outline: As a user i want to register account with invalid fullname//
 
@@ -99,4 +109,4 @@
                     
 //     // }
    
-// }
+}
