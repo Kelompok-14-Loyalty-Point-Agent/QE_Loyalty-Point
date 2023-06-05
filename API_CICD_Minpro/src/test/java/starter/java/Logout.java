@@ -25,7 +25,7 @@ public class Logout {
 
     @Step("I send POST HTTP request logout")
     public void sendPostApiEndpointsLogout() {
-        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg1MTY5Mzc0fQ.XAas1JmGfAu2RpeG5Gx4X4bPfPuUA24aKocJT8pBM6M").get(setPostApiEndpointsLogout()).then().statusCode(200);
+        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzMsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NTk1OTE4N30.lVehEgQJPBTGm9lS3Mzy4WfDAFWnfM2M0IxAFFjsfgw").get(setPostApiEndpointsLogout()).then().statusCode(200);
     }
 
     //negatif
@@ -39,7 +39,7 @@ public class Logout {
         restAssuredThat(response -> response.statusCode(200));
     }
 
-    @Step("I receive valid HTTP response code 401 logou")
+    @Step("I receive valid HTTP response code 401 logout")
     public void receiveValidHttp401logout() {
         restAssuredThat(response -> response.statusCode(401));
     }
