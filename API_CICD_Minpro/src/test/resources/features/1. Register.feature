@@ -1,3 +1,4 @@
+@registertest
 Feature: Register
 
   As a user
@@ -29,17 +30,3 @@ Feature: Register
     When I send POST HTTP request register5
     Then I receive valid HTTP response code 400 register
 
-#  Scenario: POST - Register with invalid email
-#    Given I set POST api endpoints register
-#    When I send POST HTTP request register6
-#    Then I receive valid HTTP response code 400 register
-#
-#  Scenario: POST - Register by filling in the password field with a space
-#    Given I set POST api endpoints register
-#    When I send POST HTTP request register7
-#    Then I receive valid HTTP response code 400 register
-#
-#  Scenario: POST - Register by filling in the fullname field with a space
-#    Given I set POST api endpoints register
-#    When I send POST HTTP request register8
-#    Then I receive valid HTTP response code 400 register

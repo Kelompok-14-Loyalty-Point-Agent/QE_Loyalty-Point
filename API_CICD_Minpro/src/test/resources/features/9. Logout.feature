@@ -1,3 +1,4 @@
+@logouttest
 Feature: Logout
   As a user
   I want to be able to log out from the system

@@ -27,7 +27,7 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("fullname", "kelompok4");
+        requestBody.put("name", "kelompok4");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
@@ -39,8 +39,8 @@ public class Register {
     public void sendPostHttpRequestRegister2() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "rini@gmail.com");
+        requestBody.put("name", "");
         requestBody.put("password", "123456");
-        requestBody.put("fullname", " ");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -48,9 +48,9 @@ public class Register {
     @Step("I send POST HTTP request register3")
     public void sendPostHttpRequestRegister3() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", " ");
+        requestBody.put("email", "");
         requestBody.put("password", "customer123");
-        requestBody.put("fullname", "riniimldaaa");
+        requestBody.put("name", "riniimldaaa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -59,8 +59,8 @@ public class Register {
     public void sendPostHttpRequestRegister4() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "stevenjatmiko@gmail.com");
-        requestBody.put("password", " ");
-        requestBody.put("fullname", "riniimldaaa");
+        requestBody.put("password", "");
+        requestBody.put("name", "riniimldaaa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }

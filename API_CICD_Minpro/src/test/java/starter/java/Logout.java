@@ -25,7 +25,7 @@ public class Logout {
 
     @Step("I send POST HTTP request logout")
     public void sendPostApiEndpointsLogout() {
-        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NzMsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NTk1OTE4N30.lVehEgQJPBTGm9lS3Mzy4WfDAFWnfM2M0IxAFFjsfgw").get(setPostApiEndpointsLogout()).then().statusCode(200);
+        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjMsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4NjI4ODk2NH0.3hOl3Tw0U1mi2yhQNpsnzAKIxSOSf0-oW2jsyBZOIxY").get(setPostApiEndpointsLogout()).then().statusCode(200);
     }
 
     //negatif

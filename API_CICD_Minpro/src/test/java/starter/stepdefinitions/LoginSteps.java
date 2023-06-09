@@ -58,4 +58,9 @@ public class LoginSteps {
     public void receiveValidHttp401Login() {
         login.receiveValidHttp401Login();
     }
+
+    @Then("I receive valid HTTP response code 400 login")
+    public void receiveValidHttp400Login() {
+        login.receiveValidHttp400Login();
+    }
 }

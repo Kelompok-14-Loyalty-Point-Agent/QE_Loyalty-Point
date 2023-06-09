@@ -19,8 +19,8 @@ public class Login {
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "n64mog@mail.com");
-        requestBody.put("fullname", "kelompok4");
+        requestBody.put("email", "customer128@example.com");
+        requestBody.put("fullname", "riniimldap");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -31,9 +31,9 @@ public class Login {
     @Step("I send POST HTTP request login1")
     public void sendPostHttpRequestLogin1() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "n64mog@mail.com");
-        requestBody.put("fullname", "kelompok4");
-        requestBody.put("password", "customer12");
+        requestBody.put("email", "customer128@example.com");
+        requestBody.put("fullname", "riniimldap");
+        requestBody.put("password", "customer1");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
     }
@@ -81,6 +81,11 @@ public class Login {
     @Step("I receive valid HTTP response code 200 login")
     public void receiveValidHttp200Login() {
         restAssuredThat(response -> response.statusCode(200));
+    }
+
+    @Step("I receive valid HTTP response code 400 login")
+    public void receiveValidHttp400Login() {
+        restAssuredThat(response -> response.statusCode(400));
     }
 
     @Step("I receive valid HTTP response code 401 login")
