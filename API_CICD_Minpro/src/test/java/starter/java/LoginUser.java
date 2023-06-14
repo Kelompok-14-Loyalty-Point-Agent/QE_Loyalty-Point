@@ -20,10 +20,12 @@ public class LoginUser {
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "rinim@example.com");
-        requestBody.put("name", "rinim");
         requestBody.put("password", "customer123");
 
-        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .body(requestBody.toJSONString())
+                .post(setPostApiEndpointLogin());
     }
 
     ///NEGATIFFF
