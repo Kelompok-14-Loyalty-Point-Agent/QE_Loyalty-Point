@@ -6,7 +6,7 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
 
-public class Login {
+public class LoginUser {
 
     protected String url = "http://13.229.84.45";
 
@@ -19,8 +19,8 @@ public class Login {
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "customer128@example.com");
-        requestBody.put("fullname", "riniimldap");
+        requestBody.put("email", "rinim@example.com");
+        requestBody.put("name", "rinim");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -31,8 +31,8 @@ public class Login {
     @Step("I send POST HTTP request login1")
     public void sendPostHttpRequestLogin1() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "customer128@example.com");
-        requestBody.put("fullname", "riniimldap");
+        requestBody.put("email", "rinim@example.com");
+        requestBody.put("name", "rinim");
         requestBody.put("password", "customer1");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -42,7 +42,7 @@ public class Login {
     public void sendPostHttpRequestLogin2() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "");
-        requestBody.put("fullname", "kelompok4");
+        requestBody.put("name", "rinim");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -51,8 +51,8 @@ public class Login {
     @Step("I send POST HTTP request login3")
     public void sendPostHttpRequestLogin3() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "n64mog@mail.com");
-        requestBody.put("fullname", "kelompok4");
+        requestBody.put("email", "rinim@example.com");
+        requestBody.put("name", "rinim");
         requestBody.put("password", "");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());
@@ -72,7 +72,7 @@ public class Login {
     public void sendPostHttpRequestLogin5() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "");
-        requestBody.put("fullname", "");
+        requestBody.put("name", "");
         requestBody.put("password", "");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointLogin());

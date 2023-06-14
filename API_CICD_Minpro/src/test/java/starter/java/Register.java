@@ -27,7 +27,7 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("name", "kelompok4");
+        requestBody.put("name", "rinimaulida");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
@@ -84,5 +84,10 @@ public class Register {
     @Step("I receive valid HTTP response code 400 register")
     public void receiveValidHttp400Register() {
         restAssuredThat(response -> response.statusCode(400));
+    }
+
+    @Step("I receive valid HTTP response code 500 register")
+    public void receiveValidHttp500Register() {
+        restAssuredThat((response -> response.statusCode(500)));
     }
 }

@@ -66,5 +66,10 @@ public class RegisterSteps {
     public void receiveValidHttp400Register() {
         register.receiveValidHttp400Register();
     }
+
+    @Then("I receive valid HTTP response code 500 register")
+    public void receiveValidGttp500Register() {
+        register.receiveValidHttp500Register();
+    }
 }
 

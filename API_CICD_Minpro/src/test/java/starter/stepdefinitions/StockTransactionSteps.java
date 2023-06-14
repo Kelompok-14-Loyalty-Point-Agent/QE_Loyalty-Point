@@ -4,11 +4,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;
-import starter.java.Rating;
+import starter.java.StockTransaction;
 
-public class RatingSteps {
+public class StockTransactionSteps {
     @Steps
-    Rating rating;
+    StockTransaction rating;
 
     @Given("I set POST api endpoints rating")
     public void setPostApiEndpointRating() {

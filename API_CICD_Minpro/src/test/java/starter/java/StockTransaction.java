@@ -6,7 +6,7 @@ import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import org.json.simple.JSONObject;
 
-public class Rating {
+public class StockTransaction {
 
     protected String url = "https://altashop-api.fly.dev/api/";
 
