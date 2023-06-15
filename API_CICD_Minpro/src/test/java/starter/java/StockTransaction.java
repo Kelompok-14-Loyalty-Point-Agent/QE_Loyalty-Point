@@ -8,63 +8,151 @@ import org.json.simple.JSONObject;
 
 public class StockTransaction {
 
-    protected String url = "https://altashop-api.fly.dev/api/";
+    protected String url = "http://13.229.84.45/";
 
-    @Step("I set POST api endpoints rating")
-    public String setPostApiEndpointRating() {
-        return url + "products/60724/ratings";
+    //POST - Add new Stock Transaction
+    @Step("I set POST api endpoints Stock_transaction")
+    public String setPOSTAPIEndpointsStockTransaction() {
+        return url + "stocks/add";
     }
 
-    @Step("I set POST api endpoints rating2")
-    public String setPostApiEndpointRating2() {
-        return url + "products/60724/ratings";
-    }
-
-    @Step("I set GET api endpoints rating")
-    public String setGetApiEndpointRating() {
-        return url + "products/60724/ratings";
-    }
-
-    @Step("I set GET api endpoints rating2")
-    public String setGetApiEndpointRating2() {
-        return url + "products/-13000/ratings";
-    }
-
-    @Step("I send POST HTTP request rating")
-    public void sendPostHTTPRequestRating() {
+    @Step("I send POST HTTP request Stock_transaction")
+    public void sendPOSTAPIEndpointsStockTransaction() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("count", 5);
-
-        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkFkaXR5YSBOdWdyYWhhIiwiRW1haWwiOiJhZGl0QGdtYWlsLmNvbSJ9.VM2lARkmmliu1pWtk1uhb8z5fGaElvH1jIoYM72Te3g").body(requestBody.toJSONString()).post(setPostApiEndpointRating()).then().statusCode(200);
+        requestBody.put("user_id", 2);
+        requestBody.put("stock_id", 2);
+        requestBody.put("provider_name", "Telkomsel");
+        requestBody.put("input_stock", 100000);
+        requestBody.put("payment_method", "Shopeepay");
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .body(requestBody.toJSONString())
+                .post(setPOSTAPIEndpointsStockTransaction());
     }
 
+    @Step("I receive valid HTTP response code 201 Stock_transaction")
+    public void receiveValidHTTP201StockTransaction() {
+        restAssuredThat(response -> response.statusCode(201));
+    }
 
-    @Step("I send POST HTTP request rating")
-    public void sendPostHttpRequestRating2() {
+    //POST - Add new Stock Detail without user id
+    @Step("I send POST HTTP request user_id")
+    public void sendPOSTHTTPRequestUserId() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("count", 10);
-
-        SerenityRest.given().header("Authorization", "Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkFkaXR5YSBOdWdyYWhhIiwiRW1haWwiOiJhZGl0QGdtYWlsLmNvbSJ9.VM2lARkmmliu1pWtk1uhb8z5fGaElvH1jIoYM72Te3g").body(requestBody.toJSONString()).post(setPostApiEndpointRating2()).then().statusCode(500);
+        requestBody.put("user_id", "");
+        requestBody.put("stock_id", 2);
+        requestBody.put("provider_name", "Telkomsel");
+        requestBody.put("input_stock", 100000);
+        requestBody.put("payment_method", "Shopeepay");
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .body(requestBody.toJSONString())
+                .post(setPOSTAPIEndpointsStockTransaction());
     }
 
-    @Step("I send GET HTTP request rating")
-    public void sendGetHttpRequestRating() {
-        SerenityRest.given().get(setGetApiEndpointRating());
+    //POST - Add new Stock Transaction without key
+    @Step("I send POST HTTP request key Stock_transaction")
+    public void sendPOSTHTTPRequestkeyStockTransaction() {
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("", 2);
+        requestBody.put("stock_id", 2);
+        requestBody.put("provider_name", "Telkomsel");
+        requestBody.put("input_stock", 100000);
+        requestBody.put("payment_method", "Shopeepay");
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .body(requestBody.toJSONString())
+                .post(setPOSTAPIEndpointsStockTransaction());
     }
 
-    @Step("I send GET HTTP request rating2")
-    public void sendGetHttpRequestRating2() {
-        SerenityRest.given().get(setGetApiEndpointRating2());
+    @Step("I receive valid HTTP response code 400 Stock_transaction")
+    public void receiveValidHTTP400StockTransaction() {
+        restAssuredThat(response -> response.statusCode(400));
     }
 
-    @Step("I receive valid HTTP response code 200 rating")
-    public void receiveValidHttp200Rating() {
+    //POST - add stock by adding a minimum credit
+    @Step("I send POST HTTP request add minimum credit")
+    public void sendPOSTHTTPRequestAddMinimumCredit() {
+        JSONObject requestBody = new JSONObject();
+        requestBody.put("user_id", 2);
+        requestBody.put("stock_id", 2);
+        requestBody.put("provider_name", "Telkomsel");
+        requestBody.put("input_stock", 100);
+        requestBody.put("payment_method", "Shopeepay");
+        SerenityRest.given()
+                .header("Content-Type", "application/json")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .body(requestBody.toJSONString())
+                .post(setPOSTAPIEndpointsStockTransaction());
+    }
+
+    @Step("I receive valid HTTP response code 500 Stock_transaction")
+    public void receiveValidHTTP500StockTransaction() {
+        restAssuredThat(response -> response.statusCode(500));
+    }
+
+    //GET - Get All Stock Transaction
+    @Step("I set GET api endpoints Stock_transaction")
+    public String setGETAPIEndpoitsStockTransaction() {
+        return url + "stocks/transactions";
+    }
+
+    @Step("I send GET HTTP request Stock_transaction")
+    public void sendGETHTTPRequestStockTransaction() {
+        SerenityRest.given()
+        .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .get(setGETAPIEndpoitsStockTransaction());
+    }
+
+    @Step("I receive valid HTTP response code 200 Stock_transaction")
+    public void receiveValidHTTP200StockTransacion() {
         restAssuredThat(response -> response.statusCode(200));
     }
 
-    @Step("Then I receive valid HTTP response code 500 rating")
-    public void receiveValidHttp500Rating() {
-        restAssuredThat(response -> response.statusCode(500));
+    @Step("I set GET api endpoints Stock_transactionbyid")
+    public String setGETAPIEndpointsStockTransactionById() {
+        return url + "stocks/transactions/1";
+    }
+
+    @Step("I send GET HTTP request Stock_transactionbyid")
+    public void sendGETHTTPRequestStockTransactionById() {
+        SerenityRest.given()
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .get(setGETAPIEndpointsStockTransactionById());
+    }
+
+    //GET - Get list all Stock transaction with invalid url
+    @Step("I set GET api endpoints invalid url stock_transaction")
+    public String setGETAPIEndpointsInvalidUrlStockTransaction() {
+        return url + "stocks/transaction";
+    }
+
+    @Step("I send GET HTTP request Invalid url Stock_transaction")
+    public void sendGETHTTPRequestIvalidUrlStockTransaction() {
+        SerenityRest.given()
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .get(setGETAPIEndpointsInvalidUrlStockTransaction());
+    }
+
+    //GET - Get Stock Transaction Invalid Id
+    @Step("I set GET api endpoints Invalid Id Stock_transaction")
+    public String setGETAPIEndpointsInvalidIdStockTransaction() {
+        return url + "stocks/transactions/40";
+    }
+
+    @Step("I send GET HTTP request Invalid Id Stock_transaction")
+    public void sendGETHTTPRequestInvalidIdStockTransaction() {
+        SerenityRest.given()
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NDMxMjQ2fQ.qNzFnjeuUS55mdE6xaCmQddUnjyMKUhycROa0kZcbcA")
+                .get(setGETAPIEndpointsInvalidIdStockTransaction());
+    }
+
+    @Step("I receive valid HTTP response code 404 stock_transaction")
+    public void receiveValidHTTP404StockTransaction() {
+        restAssuredThat(response -> response.statusCode(404));
     }
 
 }
