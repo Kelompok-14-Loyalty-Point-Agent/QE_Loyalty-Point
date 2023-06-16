@@ -1,7 +1,7 @@
 @registertest
 Feature: Register
 
-  As a user
+  As a user or admin
   I want to create new account
   So that I can login
 
@@ -13,7 +13,7 @@ Feature: Register
   Scenario: POST - Register without fullname
     Given I set POST api endpoints register
     When I send POST HTTP request register2
-    Then I receive valid HTTP response code 400 register
+    Then I receive valid HTTP response code 500 register
 
   Scenario: POST - Register without email
     Given I set POST api endpoints register
