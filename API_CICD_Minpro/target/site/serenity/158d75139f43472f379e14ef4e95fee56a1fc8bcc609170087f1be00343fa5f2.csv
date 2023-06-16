@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Categories","POST - Add new category","SUCCESS","2023-05-29T14:58:34.8935893+07:00[Asia/Jakarta]","0.0","1.22"
+"Categories","POST - Add new category without description data payload","SUCCESS","2023-05-29T14:58:36.1767533+07:00[Asia/Jakarta]","0.0","1.16"

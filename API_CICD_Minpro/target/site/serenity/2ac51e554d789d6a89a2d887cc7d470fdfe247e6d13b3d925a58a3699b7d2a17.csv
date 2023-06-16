@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register","POST - Register with valid data","SUCCESS","2023-05-29T14:58:18.8420175+07:00[Asia/Jakarta]","0.0","1.53"
+"Login","POST - Login without payload","SUCCESS","2023-05-29T14:58:29.7654418+07:00[Asia/Jakarta]","0.0","1.32"
+"Categories","POST - Add new category","SUCCESS","2023-05-29T14:58:34.8935893+07:00[Asia/Jakarta]","0.0","1.22"
+"Categories","POST - Add new category without description data payload","SUCCESS","2023-05-29T14:58:36.1767533+07:00[Asia/Jakarta]","0.0","1.16"
+"Product","POST - Add new product product","SUCCESS","2023-05-29T14:58:41.6130084+07:00[Asia/Jakarta]","0.0","1.09"

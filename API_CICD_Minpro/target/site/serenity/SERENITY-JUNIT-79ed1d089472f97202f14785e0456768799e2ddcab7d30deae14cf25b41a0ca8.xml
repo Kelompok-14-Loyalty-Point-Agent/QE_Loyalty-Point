@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="2" name="Order" skipped="0" tests="3" time="1.54" timestamp="2023-05-29 02:58:46"><testcase name="POST - Add new orders"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)&#13;
+io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+minpro@1.0-SNAPSHOT/starter.java.Order.sendPostHTTPRequestOrder(Order.java:29)&#13;
+minpro@1.0-SNAPSHOT/starter.stepdefinitions.OrderSteps.sentPostHttpRequestOrder(OrderSteps.java:25)&#13;
+✽.I send POST HTTP request order(file:///C:/Users/user/Documents/GitHub/QE_Loyalty-Point/API_CICD_Minpro/src/test/resources/features/6.%20Order.feature:9)&#13;
+</system-err></testcase><testcase name="GET - Get all order"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;401&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;401&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)&#13;
+io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)&#13;
+minpro@1.0-SNAPSHOT/starter.java.Order.sendGetHttpRequestOrder(Order.java:35)&#13;
+minpro@1.0-SNAPSHOT/starter.stepdefinitions.OrderSteps.sendGetHttpRequestOrder(OrderSteps.java:29)&#13;
+✽.I send GET HTTP request order(file:///C:/Users/user/Documents/GitHub/QE_Loyalty-Point/API_CICD_Minpro/src/test/resources/features/6.%20Order.feature:14)&#13;
+</system-err></testcase><testcase name="GET - Get all order without login"/></testsuite>

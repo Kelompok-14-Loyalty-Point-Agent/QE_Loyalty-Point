@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: starter.CucumberTestSuite
+-------------------------------------------------------------------------------
+Tests run: 38, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 97.355 s <<< FAILURE! - in starter.CucumberTestSuite
+Register.POST - Register with existed account  Time elapsed: 2.434 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <200>.
+
+
+Login.POST - Login with valid credential  Time elapsed: 1.29 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+
+User Information.GET - Get user information  Time elapsed: 2.244 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+Product.GET - Get all product  Time elapsed: 0.663 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+
+Order.POST - Add new orders  Time elapsed: 0.55 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+Order.GET - Get all order  Time elapsed: 0.724 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+Rating.POST - Give product rating  Time elapsed: 0.935 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+
+Rating.POST - Give product rating out of bond  Time elapsed: 0.7 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <500> but was <401>.
+
+
+Comment.POST - Post comment  Time elapsed: 0.558 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <401>.
+
+

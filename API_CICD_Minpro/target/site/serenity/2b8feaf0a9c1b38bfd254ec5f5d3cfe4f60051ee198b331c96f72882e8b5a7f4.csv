@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Register","POST - Register without fullname","SUCCESS","2023-05-29T14:58:20.4854821+07:00[Asia/Jakarta]","0.0","0.99"
+"Register","POST - Register without email","SUCCESS","2023-05-29T14:58:21.7201383+07:00[Asia/Jakarta]","0.0","0.91"
+"Register","POST - Register without password","SUCCESS","2023-05-29T14:58:22.9352913+07:00[Asia/Jakarta]","0.0","0.76"

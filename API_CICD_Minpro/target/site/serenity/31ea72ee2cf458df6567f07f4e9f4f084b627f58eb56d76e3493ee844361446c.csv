@@ -1,0 +1,3 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Comment","GET - Get comment with correct endpoints","SUCCESS","2023-05-29T14:58:51.9800869+07:00[Asia/Jakarta]","0.0","0.53"
+"Comment","Get comment with incorrect endpoints","SUCCESS","2023-05-29T14:58:52.5347855+07:00[Asia/Jakarta]","0.0","0.38"
