@@ -8,7 +8,7 @@ import org.json.simple.JSONObject;
 
 public class StockTransaction {
 
-    protected String url = "http://13.229.84.45/";
+    protected String url = "https://3.0.59.152.nip.io/";
 
     //POST - Add new Stock Transaction
     @Step("I set POST api endpoints Stock_transaction")
@@ -138,6 +138,7 @@ public class StockTransaction {
     }
 
     //GET - Get Stock Transaction Invalid Id
+    //Ganti token nya saat ingin run
     @Step("I set GET api endpoints Invalid Id Stock_transaction")
     public String setGETAPIEndpointsInvalidIdStockTransaction() {
         return url + "stocks/transactions/40";

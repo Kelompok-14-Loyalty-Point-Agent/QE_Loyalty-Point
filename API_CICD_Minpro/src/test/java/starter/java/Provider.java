@@ -7,7 +7,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Provider {
 
-    protected String url = "http://13.229.84.45/";
+    protected String url = "https://3.0.59.152.nip.io/";
 
     // GET - Get list all providers
     @Step("I set GET api endpoints providers")

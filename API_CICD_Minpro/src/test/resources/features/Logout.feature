@@ -4,13 +4,14 @@ Feature: Logout
   I want to be able to log out from the system
   So that my session is terminated and my data remains secure
 
-  Scenario: Successful logout
-    Given I set POST api endpoints logout
-    When I send POST HTTP request logout
-    Then I receive valid HTTP response code 200 logout
+   #POST - Positif ( Logout )
+  Scenario: POST - Logout User with valid credential
+    Given I set POST api endpoints logout_user
+    When I send POST HTTP request logout_user
+    Then I receive valid HTTP response code 200 logout_User
 
-  Scenario: Invalid session token
-    Given I set POST api endpoints logout
-    When I send POST HTTP request logout2
-    Then I receive valid HTTP response code 401 logout
-
+    #POST - Negatif ( Logout )
+  Scenario: POST - Logout User with token expired
+    Given I set POST api endpoints logout_user
+    When I send POST HTTP request token user expired
+    Then I receive valid HTTP response code 401 logout_User

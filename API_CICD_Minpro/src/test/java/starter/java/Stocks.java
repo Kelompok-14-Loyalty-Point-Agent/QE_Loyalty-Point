@@ -10,7 +10,7 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Stocks {
 
-    protected String url = "http://13.229.84.45/";
+    protected String url = "https://3.0.59.152.nip.io/";
 
 
     //GET - Get all stock

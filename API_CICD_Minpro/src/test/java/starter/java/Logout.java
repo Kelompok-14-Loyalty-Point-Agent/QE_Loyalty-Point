@@ -7,34 +7,40 @@ import static net.serenitybdd.rest.SerenityRest.restAssuredThat;
 
 public class Logout {
 
-    protected String url = "http://13.229.84.45";
+    protected String url = "https://3.0.59.152.nip.io";
 
 
-    @Step("I set POST api endpoints logout")
-    public String setPostApiEndpointsLogout() {
-        return url + "/auth/logout";
+    //POST - Logout User with valid credential
+    //Ganti saat akan run
+    @Step("I set POST api endpoints logout_user")
+    public String setPostApiEndpointsLogoutUser() {
+        return url + "/users/logout";
     }
 
-    @Step("I send POST HTTP request logout")
-    public void sendPostApiEndpointsLogout() {
+    @Step("I send POST HTTP request logout_user")
+    public void sendPostHttpRequestLogoutUser() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg5MzM2NjcyfQ.Osw2qVgEuZoYYr7nVWTQM1akDZ5NyUDw4J7G7FJtmpI")
-                .post(setPostApiEndpointsLogout()).then().statusCode(200);
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg5NjgxNjA2fQ.8rYuqKRO6j9WIr-qBKHTZsGOXvK_rqQrSgjRw26dhxQ")
+                .post(setPostApiEndpointsLogoutUser()).then().statusCode(200);
     }
 
-    //negatif
-    @Step("I send POST HTTP request logout2")
-    public void sendPostHttpRequestsLogout2() {
-        SerenityRest.given().get(setPostApiEndpointsLogout());
-    }
-
-    @Step("I receive valid HTTP response code 200 logout")
-    public void receiveValidHttp200logout() {
+    @Step("I receive valid HTTP response code 200 logout_User")
+    public void receiveValidHttp200LogoutUser() {
         restAssuredThat(response -> response.statusCode(200));
     }
 
-    @Step("I receive valid HTTP response code 401 logout")
-    public void receiveValidHttp401logout() {
+
+
+    // POST - Logout User with token expired
+    @Step("I send POST HTTP request token user expired")
+    public void sendPOSTHTTPRequestTokenExpired() {
+        SerenityRest.given()
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4OTUzNzA1MX0.uJ9IGqLLkx5jSiUL3yse9mAUwhfnw47qHwUKr-oCzRE")
+                .post(setPostApiEndpointsLogoutUser()).then().statusCode(401);
+    }
+
+    @Step("I receive valid HTTP response code 401 logout_User")
+    public void receiveValidHTTP401LogoutUser() {
         restAssuredThat(response -> response.statusCode(401));
     }
 }

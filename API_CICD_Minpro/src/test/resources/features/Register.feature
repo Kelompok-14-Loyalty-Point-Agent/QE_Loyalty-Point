@@ -10,10 +10,10 @@ Feature: Register
     When I send POST HTTP request register
     Then I receive valid HTTP response code 201 register
 
-  Scenario: POST - Register without fullname
+  Scenario: POST - Register without name
     Given I set POST api endpoints register
     When I send POST HTTP request register2
-    Then I receive valid HTTP response code 500 register
+    Then I receive valid HTTP response code 400 register
 
   Scenario: POST - Register without email
     Given I set POST api endpoints register

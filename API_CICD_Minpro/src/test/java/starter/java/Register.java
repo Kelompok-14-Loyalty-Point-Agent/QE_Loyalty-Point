@@ -10,7 +10,7 @@ import org.json.simple.JSONObject;
 
 public class Register {
 
-    protected String url = "http://13.229.84.45";
+    protected String url = "https://3.0.59.152.nip.io";
 
     @Step("I set POST api endpoints register")
     public String setPostApiEndpointRegister() {
@@ -27,7 +27,7 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("name", "rinimaulida");
+        requestBody.put("name", "rinimaulidau");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());

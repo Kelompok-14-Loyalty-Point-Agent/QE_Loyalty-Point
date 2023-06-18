@@ -2,7 +2,7 @@
 Feature: Login
 
   As a user
-  I want to see the products
+  I want to see the Stock
   So that I can request to the api endpoints to login
 
   Scenario: POST - Login with valid credential

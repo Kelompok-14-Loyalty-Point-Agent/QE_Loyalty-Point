@@ -11,31 +11,33 @@ public class LogoutSteps {
     @Steps
     Logout logout;
 
-    //positif
-
-    @Given("I set POST api endpoints logout")
-    public void setPostApiEndpointsLogout() {
-        logout.setPostApiEndpointsLogout();
+    //POST - Logout User with valid credential
+    //Ganti token saat ingin run
+    @Given("I set POST api endpoints logout_user")
+    public void setPostApiEndpointsLogoutUser() {
+        logout.setPostApiEndpointsLogoutUser();
     }
 
-    @When("I send POST HTTP request logout")
-    public void sendPostHttpRequestLogout() {
-        logout.sendPostApiEndpointsLogout();
+    @When("I send POST HTTP request logout_user")
+    public void sendPostHttpRequestLogoutUser() {
+        logout.sendPostHttpRequestLogoutUser();
     }
 
-        @When("I send POST HTTP request logout2")
-        public void sendPostHttpRequestsLogout2() {
-            logout.sendPostHttpRequestsLogout2();
-        }
-
-    @Then("I receive valid HTTP response code 200 logout")
-    public void receiveValidHttp200Logout() {
-        logout.receiveValidHttp200logout();
+    @Then("I receive valid HTTP response code 200 logout_User")
+    public void receiveValidHttp200LogoutUser() {
+        logout.receiveValidHttp200LogoutUser();
     }
-        @Then("I receive valid HTTP response code 401 logout")
-        public void receiveValidHttp401Logout() {
-            logout.receiveValidHttp401logout();
-        }
+
+    //POST - Logout User with token expired
+    @When("I send POST HTTP request token user expired")
+    public void sendPOSTHTTPRequestTokenExpired() {
+        logout.sendPOSTHTTPRequestTokenExpired();
+    }
+
+    @Then("I receive valid HTTP response code 401 logout_User")
+    public void receiveValidHTTP401LogoutUser(){
+        logout.receiveValidHTTP401LogoutUser();
+    }
 
 
 }

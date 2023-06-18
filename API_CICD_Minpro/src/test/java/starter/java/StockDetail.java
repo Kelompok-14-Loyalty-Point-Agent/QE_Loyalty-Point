@@ -9,7 +9,7 @@ import org.json.simple.JSONObject;
 
 public class StockDetail {
 
-    protected String url = "http://13.229.84.45/";
+    protected String url = "https://3.0.59.152.nip.io/";
 
     //POST - Add new Stock Detail
     @Step("I set POST api endpoints Stock_detail")
@@ -20,7 +20,7 @@ public class StockDetail {
     @Step("I send POST HTTP request Stock_detail")
     public void sendPOSTHTTPRequestStockDetail() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("stock_id", 6);
+        requestBody.put("stock_id", 7);
         requestBody.put("stock", 15);
         requestBody.put("price", 61000);
         requestBody.put("quantity", 100);
@@ -108,6 +108,7 @@ public class StockDetail {
     }
 
     //PUT - Put update stock
+    //Ganti url saat akan di run
     @Step("I set PUT api endpoints Stock_detail")
     public String setPUTEndpointsStockDetail() {
         return url + "stocks/details/3";
@@ -116,12 +117,12 @@ public class StockDetail {
     @Step("I send PUT HTTP request Update_stock")
     public void sendPUTHTTPRequestUpdate() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("stock", 11);
+        requestBody.put("stock", 12);
         requestBody.put("price", 75000);
-        requestBody.put("quantity", 100);
+        requestBody.put("quantity", 1000);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NjgzNzE4fQ.tBc0TAqa1iQlfMA_ta5bwN8OTIzsKyUYAYDlBjV1QBQ")
                 .body(requestBody.toJSONString())
                 .put(setPUTEndpointsStockDetail());
     }
@@ -140,10 +141,11 @@ public class StockDetail {
                 .put(setPUTEndpointsStockDetail());
     }
 
-    //DELETE - Delete all Stock Detail
+    //DELETE - Delete by id stock detail
+    //Ganti url disaat akan di run
     @Step("I set DELETE api endpoints stock_detail")
     public String setDELETEAPIedpointsStockDetail() {
-        return url + "stocks/details/3";
+        return url + "stocks/details/4";
     }
 
     @Step("I send DELETE HTTP request stock_detail")

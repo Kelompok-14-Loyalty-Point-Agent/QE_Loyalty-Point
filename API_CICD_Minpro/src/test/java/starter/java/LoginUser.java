@@ -8,7 +8,7 @@ import org.json.simple.JSONObject;
 
 public class LoginUser {
 
-    protected String url = "http://13.229.84.45";
+    protected String url = "https://3.0.59.152.nip.io";
 
 
     @Step("I set POST api endpoints login")
@@ -16,10 +16,12 @@ public class LoginUser {
         return url + "/auth/login";
     }
 
+    //Ganti disaat akan di RUN
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "rinim@example.com");
+        requestBody.put("email", "customer@example.com");
+        requestBody.put("name", "customer");
         requestBody.put("password", "customer123");
 
         SerenityRest.given()
