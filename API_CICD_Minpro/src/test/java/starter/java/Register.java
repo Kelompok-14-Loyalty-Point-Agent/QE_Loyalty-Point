@@ -27,7 +27,7 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("name", "rinimaulidau");
+        requestBody.put("name", "rinimaulida34");
         requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());

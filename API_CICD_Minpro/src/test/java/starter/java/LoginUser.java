@@ -20,7 +20,7 @@ public class LoginUser {
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "customer@example.com");
+        requestBody.put("email", "rinimaulida17@example.com");
         requestBody.put("name", "customer");
         requestBody.put("password", "customer123");
 

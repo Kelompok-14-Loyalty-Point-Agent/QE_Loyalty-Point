@@ -20,7 +20,7 @@ public class Logout {
     @Step("I send POST HTTP request logout_user")
     public void sendPostHttpRequestLogoutUser() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjg5NjgxNjA2fQ.8rYuqKRO6j9WIr-qBKHTZsGOXvK_rqQrSgjRw26dhxQ")
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTY4OTk0ODU2N30.HTigE-4HE3HTzh6zc-ARyCMKttT_0ZwMSbvOkC1gvVY")
                 .post(setPostApiEndpointsLogoutUser()).then().statusCode(200);
     }
 

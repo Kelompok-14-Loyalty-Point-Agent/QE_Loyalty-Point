@@ -95,7 +95,7 @@ public class AuthAdmin {
     @Step("I send POST HTTP request logout_admin")
     public void sendPOSTHTTPRequestLogoutAdmin() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5Njg0NzI2fQ.YByBGPd3OQ7NZyBfCwYqS_Qo5U1Xi5xw1l51stdZNPs")
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5OTQ4NjAzfQ.7H_pw7p7ksLC-QXIdL18ZO0EdW14276CPXWmkMknbWo")
                 .post(setPOSTAPIEndpointsLogout_admin());
     }
 

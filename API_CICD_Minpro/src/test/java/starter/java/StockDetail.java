@@ -111,7 +111,7 @@ public class StockDetail {
     //Ganti url saat akan di run
     @Step("I set PUT api endpoints Stock_detail")
     public String setPUTEndpointsStockDetail() {
-        return url + "stocks/details/3";
+        return url + "stocks/details/5";
     }
 
     @Step("I send PUT HTTP request Update_stock")
@@ -145,7 +145,7 @@ public class StockDetail {
     //Ganti url disaat akan di run
     @Step("I set DELETE api endpoints stock_detail")
     public String setDELETEAPIedpointsStockDetail() {
-        return url + "stocks/details/4";
+        return url + "stocks/details/9";
     }
 
     @Step("I send DELETE HTTP request stock_detail")
