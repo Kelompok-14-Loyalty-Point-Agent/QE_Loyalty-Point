@@ -10,11 +10,11 @@ import org.json.simple.JSONObject;
 
 public class Register {
 
-    protected String url = "https://altashop-api.fly.dev/api/";
+    protected String url = "https://3.0.59.152.nip.io";
 
     @Step("I set POST api endpoints register")
     public String setPostApiEndpointRegister() {
-        return url + "auth/register";
+        return url + "/auth/register";
     }
 
     ///POSITIF
@@ -27,8 +27,8 @@ public class Register {
         String temp = RandomStringUtils.random(length, allowedChars);
         email = temp.substring(0, temp.length() - 9) + "@mail.com";
         requestBody.put("email", email);
-        requestBody.put("password", "123456");
-        requestBody.put("fullname", "StevenJatmiko");
+        requestBody.put("name", "rinimaulida34");
+        requestBody.put("password", "customer123");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -38,9 +38,9 @@ public class Register {
     @Step("I send POST HTTP request register2")
     public void sendPostHttpRequestRegister2() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "stevenjatmiko@gmail.com");
+        requestBody.put("email", "rini@gmail.com");
+        requestBody.put("name", "");
         requestBody.put("password", "123456");
-        requestBody.put("fullname", "");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -49,8 +49,8 @@ public class Register {
     public void sendPostHttpRequestRegister3() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "");
-        requestBody.put("password", "123456");
-        requestBody.put("fullname", "Steven Jatmiko");
+        requestBody.put("password", "customer123");
+        requestBody.put("name", "riniimldaaa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -60,7 +60,7 @@ public class Register {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "stevenjatmiko@gmail.com");
         requestBody.put("password", "");
-        requestBody.put("fullname", "Steven Jatmiko");
+        requestBody.put("name", "riniimldaaa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
@@ -68,53 +68,26 @@ public class Register {
     @Step("I send POST HTTP request register5")
     public void sendPostHttpRequestRegister5() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "stevenmiko@gmail.com");
+        requestBody.put("email", "@mail.com");
         requestBody.put("password", "steven123");
-        requestBody.put("fullname", "steven");
+        requestBody.put("fullname", "riniimldaaa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
     }
-//
-//    ///GANTI SETIAP RUN
-//    @Step("I send POST HTTP request register6")
-//    public void sendPostHttpRequestRegister6() {
-//        JSONObject requestBody = new JSONObject();
-//        requestBody.put("email", "stevennnngmail.com");
-//        requestBody.put("password", "steven123");
-//        requestBody.put("fullname", "steven");
-//
-//        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
-//    }
-//
-//    ///GANTI SETIAP RUN
-//    @Step("I send POST HTTP request register7")
-//    public void sendPostHttpRequestRegister7() {
-//        JSONObject requestBody = new JSONObject();
-//        requestBody.put("email", "stevennnnn@gmail.com");
-//        requestBody.put("password", " ");
-//        requestBody.put("fullname", "steven");
-//
-//        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
-//    }
-//
-//    ///GANTI SETIAP RUN
-//    @Step("I send POST HTTP request register8")
-//    public void sendPostHttpRequestRegister8() {
-//        JSONObject requestBody = new JSONObject();
-//        requestBody.put("email", "stevennn@gmail.com");
-//        requestBody.put("password", "steven123");
-//        requestBody.put("fullname", " ");
-//
-//        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
-//    }
 
-    @Step("I receive valid HTTP response code 200 register")
+
+    @Step("I receive valid HTTP response code 201 register")
     public void receiveValidHttp200Register() {
-        restAssuredThat(response -> response.statusCode(200));
+        restAssuredThat(response -> response.statusCode(201));
     }
 
     @Step("I receive valid HTTP response code 400 register")
     public void receiveValidHttp400Register() {
         restAssuredThat(response -> response.statusCode(400));
+    }
+
+    @Step("I receive valid HTTP response code 500 register")
+    public void receiveValidHttp500Register() {
+        restAssuredThat((response -> response.statusCode(500)));
     }
 }
