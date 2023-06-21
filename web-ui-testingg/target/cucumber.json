@@ -1,0 +1,759 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:30:08.384Z",
+        "line": 3,
+        "name": "as a user i have managed to view the customer data",
+        "description": "",
+        "id": "customerdata-feature;as-a-user-i-have-managed-to-view-the-customer-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39061000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Openn browserrrr loyaltyy pointt",
+            "match": {
+              "location": "StarDef.CustomerData.iOpennBrowserrrrLoyaltyyPointt()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2636000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Opeen websitee loyalty pointt",
+            "match": {
+              "location": "StarDef.CustomerData.opeenWebsiteeLoyaltyPointt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2962000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Enterr a validd emaill andd passwordd",
+            "match": {
+              "location": "StarDef.CustomerData.iEnterrAValiddEmaillAnddPasswordd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I clickk siignn in buttonnn",
+            "match": {
+              "location": "StarDef.CustomerData.iClickkSiignnInButtonnn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027css-yia7su\u0027]/div[@class\u003d\u0027css-1k9efnl\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5422}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 4090540d2e1150424519b3b5ef5797e5\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027css-yia7su\u0027]/div[@class\u003d\u0027css-1k9efnl\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.CustomerData.iClickCustomerData(CustomerData.java:40)\r\n\tat ✽.I click customer data(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/CustomerData.feature:8)\r\n",
+              "duration": 660000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I click customer data",
+            "match": {
+              "location": "StarDef.CustomerData.iClickCustomerData()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "CustomerData Feature",
+    "description": "",
+    "id": "customerdata-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CustomerData.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:30:54.720Z",
+        "line": 3,
+        "name": "as a user i have managed to view the customer transaction",
+        "description": "",
+        "id": "customertransaction-feature;as-a-user-i-have-managed-to-view-the-customer-transaction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24726000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Openn browserrrr loyaltyy point",
+            "match": {
+              "location": "StarDef.CustomerTransaction.iOpennBrowserrrrLoyaltyyPoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6223000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Opeen websitee loyalty point",
+            "match": {
+              "location": "StarDef.CustomerTransaction.opeenWebsiteeLoyaltyPoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3190000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Enterr a validd emaill andd password",
+            "match": {
+              "location": "StarDef.CustomerTransaction.iEnterrAValiddEmaillAnddPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I clickk siignn in buttonn",
+            "match": {
+              "location": "StarDef.CustomerTransaction.iClickkSiignnInButtonn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5478}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: c0766d6c4b0420ae2ba300a1326470ff\n*** Element info: {Using\u003dxpath, value\u003d//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.CustomerTransaction.iClickCustomerTransaction(CustomerTransaction.java:40)\r\n\tat ✽.I click customer transaction(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/CustomerTransaction.feature:8)\r\n",
+              "duration": 18000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I click customer transaction",
+            "match": {
+              "location": "StarDef.CustomerTransaction.iClickCustomerTransaction()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "CustomerTransaction Feature",
+    "description": "",
+    "id": "customertransaction-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CustomerTransaction.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:31:28.980Z",
+        "line": 3,
+        "name": "as a user i have managed to view the stock cash out",
+        "description": "",
+        "id": "stockcashout-feature;as-a-user-i-have-managed-to-view-the-stock-cash-out",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25421000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Opeenn browserrrr loyaltyy pointt",
+            "match": {
+              "location": "StarDef.StockCashOut.iOpeennBrowserrrrLoyaltyyPointt()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10473000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Opeen websiteee loyalty pointt",
+            "match": {
+              "location": "StarDef.StockCashOut.opeenWebsiteeeLoyaltyPointt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4073000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Enterrr a validd emaill andd passwordd",
+            "match": {
+              "location": "StarDef.StockCashOut.iEnterrrAValiddEmaillAnddPasswordd()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I clickkk siignn in buttonnn",
+            "match": {
+              "location": "StarDef.StockCashOut.iClickkkSiignnInButtonnn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@class\u003d\u0027css-yia7su\u0027]/div[@class\u003d\u0027css-1k9efnl\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5533}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: ebde6af175a4047143343ff5ab040b61\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027css-yia7su\u0027]/div[@class\u003d\u0027css-1k9efnl\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.StockCashOut.iClickCustomerStockCashOut(StockCashOut.java:40)\r\n\tat ✽.I click stock cash out(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/StockCashOut.feature:8)\r\n",
+              "duration": 19000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I click stock cash out",
+            "match": {
+              "location": "StarDef.StockCashOut.iClickCustomerStockCashOut()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "StockCashOut Feature",
+    "description": "",
+    "id": "stockcashout-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/StockCashOut.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:32:09.063Z",
+        "line": 4,
+        "name": "as a user i have managed to view the profile",
+        "description": "",
+        "id": "profile-feature;as-a-user-i-have-managed-to-view-the-profile",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30605000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Openn browserrrr loyalty point",
+            "match": {
+              "location": "StarDef.profile.iOpennBrowserrrr()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8741000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Opennn website loyalty pointt",
+            "match": {
+              "location": "StarDef.profile.opennnWebsiteLoyaltyPointt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 601000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Enterr a validd email andd password",
+            "match": {
+              "location": "StarDef.profile.iEnterrAValiddEmailAnddPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I clickk signn in buttonn",
+            "match": {
+              "location": "StarDef.profile.iClickkSignnInButtonn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class\u003d\u0027chakra-button css-okmu2y\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5606}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 6ad7b2742c4902a1b27170f5d55d0878\n*** Element info: {Using\u003dxpath, value\u003d//button[@class\u003d\u0027chakra-button css-okmu2y\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.profile.iClickProfileButton(profile.java:40)\r\n\tat ✽.I click profile button(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/profile.feature:9)\r\n",
+              "duration": 21000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I click profile button",
+            "match": {
+              "location": "StarDef.profile.iClickProfileButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I input a valid nama lengkap alamat",
+            "match": {
+              "location": "StarDef.profile.iInputAInvalidNamaAlamatAndPassword()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@profile"
+          }
+        ]
+      }
+    ],
+    "name": "Profile Feature",
+    "description": "",
+    "id": "profile-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/profile.feature",
+    "tags": [
+      {
+        "name": "@profile",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:32:49.159Z",
+        "line": 4,
+        "name": "as a user i have be able to success sign in",
+        "description": "",
+        "id": "sign-in-feature;as-a-user-i-have-be-able-to-success-sign-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 23453000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Open browser loyalty point",
+            "match": {
+              "location": "StarDef.signin.iOpenBrowserLoyaltyPoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12873000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open website loyalty pointt",
+            "match": {
+              "location": "StarDef.signin.openWebsiteLoyaltyPointt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5799000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Enter a validd email and password",
+            "match": {
+              "location": "StarDef.signin.iEnterAValiddEmailAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17557000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click sign in button and succes",
+            "match": {
+              "location": "StarDef.signin.iClickSignInButton()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin"
+          }
+        ]
+      }
+    ],
+    "name": "Sign In Feature",
+    "description": "",
+    "id": "sign-in-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/signin.feature",
+    "tags": [
+      {
+        "name": "@signin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:33:48.865Z",
+        "line": 4,
+        "name": "As user i have be able to sign out in loyalty point",
+        "description": "",
+        "id": "sign-out-feature;as-user-i-have-be-able-to-sign-out-in-loyalty-point",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4593000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i open browserr - logout",
+            "match": {
+              "location": "StarDef.signout.iOpenBrowserrLogout()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4012000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i am on the home pagee - logout",
+            "match": {
+              "location": "StarDef.signout.iAmOnTheHomePageeLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1482000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i input valid emaill - logout",
+            "match": {
+              "location": "StarDef.signout.iInputValidEmaillLogout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i input valid passwordd - logout",
+            "match": {
+              "location": "StarDef.signout.iInputValidPassworddLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click sign in buttonn - logout",
+            "match": {
+              "location": "StarDef.signout.iClickSignInButtonnLogout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class\u003d\u0027chakra-button css-1h4exbx\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5723}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 06462fb5e2af2d378ac6335d84e492bf\n*** Element info: {Using\u003dxpath, value\u003d//button[@class\u003d\u0027chakra-button css-1h4exbx\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.signout.iClickSignOut(signout.java:44)\r\n\tat ✽.i click sign out(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/signout.feature:10)\r\n",
+              "duration": 17000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "i click sign out",
+            "match": {
+              "location": "StarDef.signout.iClickSignOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "userr successfull logout and redirect to login page",
+            "match": {
+              "location": "StarDef.signout.userrSuccessfullLogoutAndRedirectToLoginPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signout"
+          }
+        ]
+      }
+    ],
+    "name": "Sign out Feature",
+    "description": "",
+    "id": "sign-out-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/signout.feature",
+    "tags": [
+      {
+        "name": "@signout",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-06-20T11:33:59.293Z",
+        "line": 4,
+        "name": "as a user i have successfully add stock credit",
+        "description": "",
+        "id": "stock-pulsa/data;as-a-user-i-have-successfully-add-stock-credit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8176000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Opennn browserrr loyalty point",
+            "match": {
+              "location": "StarDef.stockpulsa.iOpennnBrowserrrLoyaltyPoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14824000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Openn websitee loyalty point",
+            "match": {
+              "location": "StarDef.stockpulsa.opennWebsiteeLoyaltyPoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 435000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Enterr a validd email and password",
+            "match": {
+              "location": "StarDef.stockpulsa.iEnterrAValiddEmailAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I clickk sign in buttonn",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickkSignInButtonn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5755}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 2e75a183794ad9b6dc41eabe0ca33b49\n*** Element info: {Using\u003dxpath, value\u003d//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.stockpulsa.iClickStockCreditOrData(stockpulsa.java:38)\r\n\tat ✽.I click stock credit or data(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/stockpulsa.feature:9)\r\n",
+              "duration": 20000000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I click stock credit or data",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickStockCreditOrData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click add stock credit",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickAddStockCredit()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@stockpulsa"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-06-20T11:34:22.863Z",
+        "line": 12,
+        "name": "as a user i have successfully add stock data",
+        "description": "",
+        "id": "stock-pulsa/data;as-a-user-i-have-successfully-add-stock-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9535000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I Opennn browserrr loyalty point",
+            "match": {
+              "location": "StarDef.stockpulsa.iOpennnBrowserrrLoyaltyPoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22445000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Openn websitee loyalty point",
+            "match": {
+              "location": "StarDef.stockpulsa.opennWebsiteeLoyaltyPoint()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6706000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I Enterr a validd email and password",
+            "match": {
+              "location": "StarDef.stockpulsa.iEnterrAValiddEmailAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I clickk sign in buttonn",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickkSignInButtonn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]\"}\n  (Session info: chrome\u003d114.0.5735.134)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ASUS\u0027, ip: \u0027192.168.59.1\u0027, os.name: \u0027Windows 8.1\u0027, os.arch: \u0027x86\u0027, os.version: \u00276.3\u0027, java.version: \u00271.8.0_31\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\USER\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:5794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: b05e5effae1238560f3d34f5d3627f77\n*** Element info: {Using\u003dxpath, value\u003d//p[@class\u003d\u0027chakra-text css-1n95ar0\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:408)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat StarDef.stockpulsa.iClickStockCreditOrData(stockpulsa.java:38)\r\n\tat ✽.I click stock credit or data(file:///C:/Users/USER/IdeaProjects/web-ui-testingg/src/test/resources/features/stockpulsa.feature:17)\r\n",
+              "duration": 18000000,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I click stock credit or data",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickStockCreditOrData()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click add stock data",
+            "match": {
+              "location": "StarDef.stockpulsa.iClickAddStockData()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@stockpulsa"
+          }
+        ]
+      }
+    ],
+    "name": "Stock Pulsa/Data",
+    "description": "",
+    "id": "stock-pulsa/data",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/stockpulsa.feature",
+    "tags": [
+      {
+        "name": "@stockpulsa",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

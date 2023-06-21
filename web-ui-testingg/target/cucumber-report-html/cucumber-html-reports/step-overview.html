@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>saucedemo</td>
+                          <td>1</td>
+                        <td>20 Jun 2023, 18:38</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">StarDef.CustomerData.iClickCustomerData()</td>
+                <td>1</td>
+                <td class="duration" data-value="660000000">660ms</td>
+                <td class="duration" data-value="660000000">660ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerData.iClickkSiignnInButtonnn()</td>
+                <td>1</td>
+                <td class="duration" data-value="469000000">469ms</td>
+                <td class="duration" data-value="469000000">469ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerData.iEnterrAValiddEmaillAnddPasswordd()</td>
+                <td>1</td>
+                <td class="duration" data-value="2962000000">2s 962ms</td>
+                <td class="duration" data-value="2962000000">2s 962ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerData.iOpennBrowserrrrLoyaltyyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="39061000000">39s 061ms</td>
+                <td class="duration" data-value="39061000000">39s 061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerData.opeenWebsiteeLoyaltyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="2636000000">2s 636ms</td>
+                <td class="duration" data-value="2636000000">2s 636ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerTransaction.iClickCustomerTransaction()</td>
+                <td>1</td>
+                <td class="duration" data-value="18000000">018ms</td>
+                <td class="duration" data-value="18000000">018ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerTransaction.iClickkSiignnInButtonn()</td>
+                <td>1</td>
+                <td class="duration" data-value="89000000">089ms</td>
+                <td class="duration" data-value="89000000">089ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerTransaction.iEnterrAValiddEmaillAnddPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="3190000000">3s 190ms</td>
+                <td class="duration" data-value="3190000000">3s 190ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerTransaction.iOpennBrowserrrrLoyaltyyPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="24726000000">24s 726ms</td>
+                <td class="duration" data-value="24726000000">24s 726ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.CustomerTransaction.opeenWebsiteeLoyaltyPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="6223000000">6s 223ms</td>
+                <td class="duration" data-value="6223000000">6s 223ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.StockCashOut.iClickCustomerStockCashOut()</td>
+                <td>1</td>
+                <td class="duration" data-value="19000000">019ms</td>
+                <td class="duration" data-value="19000000">019ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.StockCashOut.iClickkkSiignnInButtonnn()</td>
+                <td>1</td>
+                <td class="duration" data-value="84000000">084ms</td>
+                <td class="duration" data-value="84000000">084ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.StockCashOut.iEnterrrAValiddEmaillAnddPasswordd()</td>
+                <td>1</td>
+                <td class="duration" data-value="4073000000">4s 073ms</td>
+                <td class="duration" data-value="4073000000">4s 073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.StockCashOut.iOpeennBrowserrrrLoyaltyyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="25421000000">25s 421ms</td>
+                <td class="duration" data-value="25421000000">25s 421ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.StockCashOut.opeenWebsiteeeLoyaltyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="10473000000">10s 473ms</td>
+                <td class="duration" data-value="10473000000">10s 473ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.iClickProfileButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="21000000">021ms</td>
+                <td class="duration" data-value="21000000">021ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.iClickkSignnInButtonn()</td>
+                <td>1</td>
+                <td class="duration" data-value="114000000">114ms</td>
+                <td class="duration" data-value="114000000">114ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.iEnterrAValiddEmailAnddPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="601000000">601ms</td>
+                <td class="duration" data-value="601000000">601ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.iInputAInvalidNamaAlamatAndPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.iOpennBrowserrrr()</td>
+                <td>1</td>
+                <td class="duration" data-value="30605000000">30s 605ms</td>
+                <td class="duration" data-value="30605000000">30s 605ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.profile.opennnWebsiteLoyaltyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="8741000000">8s 741ms</td>
+                <td class="duration" data-value="8741000000">8s 741ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signin.iClickSignInButton()</td>
+                <td>1</td>
+                <td class="duration" data-value="17557000000">17s 557ms</td>
+                <td class="duration" data-value="17557000000">17s 557ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signin.iEnterAValiddEmailAndPassword()</td>
+                <td>1</td>
+                <td class="duration" data-value="5799000000">5s 799ms</td>
+                <td class="duration" data-value="5799000000">5s 799ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signin.iOpenBrowserLoyaltyPoint()</td>
+                <td>1</td>
+                <td class="duration" data-value="23453000000">23s 453ms</td>
+                <td class="duration" data-value="23453000000">23s 453ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signin.openWebsiteLoyaltyPointt()</td>
+                <td>1</td>
+                <td class="duration" data-value="12873000000">12s 873ms</td>
+                <td class="duration" data-value="12873000000">12s 873ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iAmOnTheHomePageeLogout()</td>
+                <td>1</td>
+                <td class="duration" data-value="4012000000">4s 012ms</td>
+                <td class="duration" data-value="4012000000">4s 012ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iClickSignInButtonnLogout()</td>
+                <td>1</td>
+                <td class="duration" data-value="102000000">102ms</td>
+                <td class="duration" data-value="102000000">102ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iClickSignOut()</td>
+                <td>1</td>
+                <td class="duration" data-value="17000000">017ms</td>
+                <td class="duration" data-value="17000000">017ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iInputValidEmaillLogout()</td>
+                <td>1</td>
+                <td class="duration" data-value="1482000000">1s 482ms</td>
+                <td class="duration" data-value="1482000000">1s 482ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iInputValidPassworddLogout()</td>
+                <td>1</td>
+                <td class="duration" data-value="211000000">211ms</td>
+                <td class="duration" data-value="211000000">211ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.iOpenBrowserrLogout()</td>
+                <td>1</td>
+                <td class="duration" data-value="4593000000">4s 593ms</td>
+                <td class="duration" data-value="4593000000">4s 593ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.signout.userrSuccessfullLogoutAndRedirectToLoginPage()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iClickAddStockCredit()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iClickAddStockData()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iClickStockCreditOrData()</td>
+                <td>2</td>
+                <td class="duration" data-value="38000000">038ms</td>
+                <td class="duration" data-value="19000000">019ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iClickkSignInButtonn()</td>
+                <td>2</td>
+                <td class="duration" data-value="197000000">197ms</td>
+                <td class="duration" data-value="98500000">098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iEnterrAValiddEmailAndPassword()</td>
+                <td>2</td>
+                <td class="duration" data-value="7141000000">7s 141ms</td>
+                <td class="duration" data-value="3570500000">3s 570ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.iOpennnBrowserrrLoyaltyPoint()</td>
+                <td>2</td>
+                <td class="duration" data-value="17711000000">17s 711ms</td>
+                <td class="duration" data-value="8855500000">8s 855ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">StarDef.stockpulsa.opennWebsiteeLoyaltyPoint()</td>
+                <td>2</td>
+                <td class="duration" data-value="37269000000">37s 269ms</td>
+                <td class="duration" data-value="18634500000">18s 634ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>39</td>
+              <td>44</td>
+              <td class="duration">4m 52s 641ms</td>
+              <td class="duration">6s 650ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
