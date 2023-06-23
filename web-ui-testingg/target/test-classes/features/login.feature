@@ -2,7 +2,7 @@
 #Feature: Login Feature
 #
 #  Scenario: as a user i have be able to success login
-#    Given I Open browser
+#   Given I Open browser
 #    When Open website alta-shop
 #    And I Enter a valid email and password
 #    And I click login button
@@ -27,4 +27,4 @@
 #    When Open website alta-shop
 #    And I Enter a invalid empty fields email and password
 #    And I clickk logiinn buttonnn
-#    Then User see error message record not found
+#    Then User see error message record not found#

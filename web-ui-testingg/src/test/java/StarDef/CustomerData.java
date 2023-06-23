@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,12 +23,15 @@ public class CustomerData {
     public void opeenWebsiteeLoyaltyPointt() throws InterruptedException {
         driver.get("https://frontend-desktop-dashboard.vercel.app/signin");
         Thread.sleep(1000);
+        driver.manage().window().maximize();
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,1000)", "");
     }
 
     @And("I Enterr a validd emaill andd passwordd")
     public void iEnterrAValiddEmaillAnddPasswordd() {
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys("admin@example.com");
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("admin123");
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("newPassword");
     }
 
     @And("I clickk siignn in buttonnn")
@@ -37,7 +41,7 @@ public class CustomerData {
 
     @And("I click customer data")
     public void iClickCustomerData() {
-        driver.findElement(By.xpath("//div[@class='css-yia7su']/div[@class='css-1k9efnl']")).click();
+        driver.findElement(By.xpath("//span[@id='__chakra_env']")).click();
     }
 }
 

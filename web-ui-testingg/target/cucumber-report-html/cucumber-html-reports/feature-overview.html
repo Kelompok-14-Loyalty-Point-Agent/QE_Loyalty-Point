@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                33,
-                7,
-                4,
+                70,
+                14,
+                25,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 44) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 109) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                7
+                5,
+                14
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 19) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>saucedemo</td>
                           <td>1</td>
-                        <td>20 Jun 2023, 18:38</td>
+                        <td>23 Jun 2023, 17:07</td>
           </tr>
         </tbody>
       </table>
@@ -328,13 +328,13 @@ $(document).ready(function() {
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
         <td >0</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >4</td>
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="45788000000">45s 788ms</td>
+        <td class="duration" data-value="20876000000">20s 876ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -349,7 +349,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="34246000000">34s 246ms</td>
+        <td class="duration" data-value="62051000000">1m 2s 051ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -364,22 +364,22 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">6</td>
-        <td class="duration" data-value="40082000000">40s 082ms</td>
+        <td class="duration" data-value="53486000000">53s 486ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="file-src-test-resources-features-signin-feature.html">Sign In Feature</a></td>
         
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >5</td>
         <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
+        <td class="total">5</td>
+        <td      class="passed"    >20</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">4</td>
-        <td class="duration" data-value="59682000000">59s 682ms</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
+        <td class="duration" data-value="258321000000">4m 18s 321ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
@@ -394,22 +394,22 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">7</td>
-        <td class="duration" data-value="10417000000">10s 417ms</td>
+        <td class="duration" data-value="56572000000">56s 572ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="file-src-test-resources-features-stockpulsa-feature.html">Stock Pulsa/Data</a></td>
+        <td class="tagname"><a href="file-src-test-resources-features-stockCreditData-feature.html">Stock Pulsa/Data</a></td>
         
         <td >0</td>
-        <td  class="failed"    >2</td>
-        <td class="total">2</td>
-        <td      class="passed"    >8</td>
-        <td      class="failed"    >2</td>
-        <td     class="skipped"   >2</td>
+        <td  class="failed"    >9</td>
+        <td class="total">9</td>
+        <td      class="passed"    >33</td>
+        <td      class="failed"    >9</td>
+        <td     class="skipped"   >19</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">12</td>
-        <td class="duration" data-value="62356000000">1m 2s 356ms</td>
+        <td class="total">61</td>
+        <td class="duration" data-value="931343000000">15m 31s 343ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -424,7 +424,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="40070000000">40s 070ms</td>
+        <td class="duration" data-value="35647000000">35s 647ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
@@ -432,31 +432,31 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td>7</td>
-            <td>1</td>
-      <td>7</td>
-      <td>8</td>
-      <td>33</td>
-      <td>7</td>
-      <td>4</td>
+            <td>5</td>
+      <td>14</td>
+      <td>19</td>
+      <td>70</td>
+      <td>14</td>
+      <td>25</td>
       <td>0</td>
       <td>0</td>
-      <td>44</td>
-      <td class="duration">4m 52s 641ms</td>
+      <td>109</td>
+      <td class="duration">23m 38s 296ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>12.50%</td>
-      <td>87.50%</td>
+            <td>26.32%</td>
+      <td>73.68%</td>
       <td></td>
-      <td>75.00%</td>
-      <td>15.91%</td>
-      <td>9.09%</td>
+      <td>64.22%</td>
+      <td>12.84%</td>
+      <td>22.94%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>87.50%</td>
+      <td>73.68%</td>
     </tr>
   </tfoot>
 </table>

@@ -2,12 +2,9 @@ StarDef\StockCashOut.class
 StarDef\CustomerData.class
 StarDef\login.class
 StarDef\signout.class
+StarDef\stockCreditData.class
 StarDef\logout.class
-StarDef\CustomerTransaction.class
-StarDef\register.class
-StarDef\stockpulsa.class
-StarDef\buy.class
 StarDef\signin.class
 StarDef\profile.class
-StarDef\detail.class
+StarDef\CustomerTransaction.class
 TestRunner\TestRunner.class
