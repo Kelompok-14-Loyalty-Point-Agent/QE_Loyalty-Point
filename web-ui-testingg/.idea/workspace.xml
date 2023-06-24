@@ -4,7 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0665b469-b37f-42c1-86c1-17c1fdedddb4" name="Changes" comment="" />
+    <list default="true" id="0665b469-b37f-42c1-86c1-17c1fdedddb4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/java/CustomerData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/stepdefinitions/CustomerDataSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/resources/features/10. CustomerData.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/java/AuthAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/java/AuthAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/java/StockDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/java/StockDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/stepdefinitions/AuthAdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/stepdefinitions/AuthAdminSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/stepdefinitions/StockDetailSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/java/starter/stepdefinitions/StockDetailSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/resources/features/4. AuthAdmin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/resources/features/4. AuthAdmin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/resources/features/7. StockDetail.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../API_CICD_Minpro/src/test/resources/features/7. StockDetail.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StarDef/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StarDef/CustomerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StarDef/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StarDef/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CustomerTransaction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CustomerTransaction.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/profile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/profile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/signin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/signin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/signout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/signout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/failures-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/feature-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-CustomerData-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-CustomerData-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-CustomerTransaction-feature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-StockCashOut-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-StockCashOut-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-profile-feature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-signin-feature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-signout-feature.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-stockpulsa-feature.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/file-src-test-resources-features-stockpulsa-feature.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/signin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/signout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/step-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/stockpulsa.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/stockpulsa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report-html/cucumber-html-reports/tag-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.TestRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestRunner.TestRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestRunner.TestRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestRunner.TestRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/CustomerData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/CustomerData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/CustomerTransaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/CustomerTransaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/StockCashOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/StockCashOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/buy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/buy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/detail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/detail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/logout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/logout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/profile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/profile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/register.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/signin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/signin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/signout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/signout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StarDef/stockpulsa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StarDef/stockpulsa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRunner/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/CustomerTransaction.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/CustomerTransaction.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/profile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/profile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/signin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/signin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/signout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/signout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web-ui-testingg-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/web-ui-testingg-1.0-SNAPSHOT.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +80,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -39,6 +107,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/USER/IdeaProjects/Mini-Project-Web-Testing&quot;
   }
 }</component>

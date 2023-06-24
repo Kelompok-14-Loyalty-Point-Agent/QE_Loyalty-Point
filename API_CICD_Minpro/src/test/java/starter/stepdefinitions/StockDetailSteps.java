@@ -60,6 +60,28 @@ public class StockDetailSteps {
         stockDetail.receiveGETHTTP200tsockDetail();
     }
 
+    //GET - Get Stock Detail By id
+    @Given("I set GET api endpoints Stock_detail Id")
+    public void setGETAPIendpointsStockDetailId() {
+        stockDetail.setGETAPIendpointsStockDetailId();
+    }
+
+    @When("I send GET HTTP request Stock_detail Id")
+    public void sendGETHTTPRequestDetailId() {
+        stockDetail.sendGETHTTPRequestDetailId();
+    }
+
+    //GET - Get All Stock Detail By id
+    @Given("I set GET api endpoints All Stock_detail Id")
+    public void setGETAPIEndpointsAllStockDetailId() {
+        stockDetail.setGETAPIEndpointsAllStockDetailId();
+    }
+
+    @When("I send GET HTTP request All Stock_detail id")
+    public void sendGETHTTPRequestAllStockDetailid() {
+        stockDetail.sendGETHTTPRequestAllStockDetailid();
+    }
+
     //GET - Get list all Stock with invalid url
     @Given("I set GET api endpoints invalid url stock_detail")
     public void setGETAPIEndpointsInvalidUrl() {
@@ -74,6 +96,27 @@ public class StockDetailSteps {
     @Then("I receive valid HTTP response code 404 stock_detail")
     public void receiveValidHTTP404StockDetail() {
         stockDetail.receiveValidHTTP404StockDetail();
+    }
+
+    //GET - Get Stock Detail Invalid By id
+    @Given("I set GET api endpoints invalid Stock_detail Id")
+    public void setGETAPIEndpointsInvalidStockDetailId() {
+        stockDetail.setGETAPIEndpointsInvalidStockDetailId();
+    }
+
+    @When("I send GET HTTP request invalid Stock_detail Id")
+    public void sendGETHTTPRequestInvalidStockDetailId() {
+        stockDetail.sendGETHTTPRequestInvalidStockDetailId();
+    }
+
+    //GET - Get All Stock Detail invalid url By All id
+    @Given("I set GET api endpoints Invalid Stock_detail All Id")
+    public void setGETAPIEndpointsInvalidAllId() {
+        stockDetail.setGETAPIEndpointsInvalidAllId();
+    }
+    @When("I send GET HTTP request Invalid Stock_detail All Id")
+    public void sendGETAPIEndpointsInvalidAllId() {
+        stockDetail.sendGETAPIEndpointsInvalidAllId();
     }
 
     //PUT - Put update stock

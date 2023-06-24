@@ -20,24 +20,24 @@ public class CustomerData {
 
     @When("Opeen websitee loyalty pointt")
     public void opeenWebsiteeLoyaltyPointt() throws InterruptedException {
-        driver.get("https://frontend-desktop-dashboard.vercel.app/signin");
+        driver.get("https://frontend-desktop-dashboard.vercel.app/dashboard");
         Thread.sleep(1000);
     }
 
     @And("I Enterr a validd emaill andd passwordd")
     public void iEnterrAValiddEmaillAnddPasswordd() {
         driver.findElement(By.xpath("//input[@id='email']")).sendKeys("admin@example.com");
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("admin123");
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("newPassoword");
     }
 
     @And("I clickk siignn in buttonnn")
     public void iClickkSiignnInButtonnn() {
-        driver.findElement(By.xpath("//button[@class='chakra-button css-q39o3o']")).click();
+        driver.findElement(By.xpath("signin")).click();
     }
 
     @And("I click customer data")
     public void iClickCustomerData() {
-        driver.findElement(By.xpath("//div[@class='css-yia7su']/div[@class='css-1k9efnl']")).click();
+        driver.findElement(By.xpath("button_navigate_customerData")).click();
     }
 }
 

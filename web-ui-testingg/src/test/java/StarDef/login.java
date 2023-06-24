@@ -37,7 +37,7 @@ public class login {
     @Then("I am on the home page")
     public void iAmOnTheHomePage() throws InterruptedException {
         Thread.sleep(5000);
-        driver.findElement(By.xpath("//div[@class='v-select__selections']")).isDisplayed();
+        driver.findElement(By.xpath("//a[@id='button_navigate_dashboard']")).isDisplayed();
         driver.close();
         driver.quit();
     }

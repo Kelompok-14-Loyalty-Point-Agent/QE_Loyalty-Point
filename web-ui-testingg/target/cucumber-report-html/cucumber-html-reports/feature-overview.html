@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                33,
-                7,
+                15,
                 4,
+                3,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 44) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 22) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                7
+                0,
+                4
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   6
+                   0,
+                   3
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
                         return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
                     }
                 }
@@ -233,7 +233,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>saucedemo</td>
                           <td>1</td>
-                        <td>20 Jun 2023, 18:38</td>
+                        <td>23 Jun 2023, 22:50</td>
           </tr>
         </tbody>
       </table>
@@ -328,73 +328,13 @@ $(document).ready(function() {
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="45788000000">45s 788ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-resources-features-CustomerTransaction-feature.html">CustomerTransaction Feature</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="34246000000">34s 246ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-resources-features-profile-feature.html">Profile Feature</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >3</td>
         <td      class="failed"    >1</td>
         <td     class="skipped"   >1</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">6</td>
-        <td class="duration" data-value="40082000000">40s 082ms</td>
-        <td class="failed">Failed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-resources-features-signin-feature.html">Sign In Feature</a></td>
-        
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">4</td>
-        <td class="duration" data-value="59682000000">59s 682ms</td>
-        <td class="passed">Passed</td>
-      </tr>
-          <tr>
-        <td class="tagname"><a href="file-src-test-resources-features-signout-feature.html">Sign out Feature</a></td>
-        
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-        <td      class="passed"    >5</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">7</td>
-        <td class="duration" data-value="10417000000">10s 417ms</td>
+        <td class="total">5</td>
+        <td class="duration" data-value="6862486000">6s 862ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -409,7 +349,7 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
-        <td class="duration" data-value="62356000000">1m 2s 356ms</td>
+        <td class="duration" data-value="12935069500">12s 935ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
@@ -424,39 +364,39 @@ $(document).ready(function() {
         <td >0</td>
         <td >0</td>
         <td class="total">5</td>
-        <td class="duration" data-value="40070000000">40s 070ms</td>
+        <td class="duration" data-value="4955420500">4s 955ms</td>
         <td class="failed">Failed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>7</td>
-            <td>1</td>
-      <td>7</td>
-      <td>8</td>
-      <td>33</td>
-      <td>7</td>
+      <td>3</td>
+            <td>0</td>
       <td>4</td>
+      <td>4</td>
+      <td>15</td>
+      <td>4</td>
+      <td>3</td>
       <td>0</td>
       <td>0</td>
-      <td>44</td>
-      <td class="duration">4m 52s 641ms</td>
+      <td>22</td>
+      <td class="duration">24s 752ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>12.50%</td>
-      <td>87.50%</td>
+            <td>0.00%</td>
+      <td>100.00%</td>
       <td></td>
-      <td>75.00%</td>
-      <td>15.91%</td>
-      <td>9.09%</td>
+      <td>68.18%</td>
+      <td>18.18%</td>
+      <td>13.64%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
       <td></td>
-      <td>87.50%</td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

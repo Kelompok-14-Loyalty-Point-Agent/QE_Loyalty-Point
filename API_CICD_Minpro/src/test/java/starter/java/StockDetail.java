@@ -84,6 +84,32 @@ public class StockDetail {
                 .get(setGETAPIEndpoinstsStockDetail());
     }
 
+    //GET - Get Stock Detail By id
+    @Step("I set GET api endpoints Stock_detail Id")
+    public String setGETAPIendpointsStockDetailId() {
+        return url + "stocks/details/1";
+    }
+
+    @Step("I send GET HTTP request Stock_detail Id")
+    public void sendGETHTTPRequestDetailId() {
+        SerenityRest.given()
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .get(setGETAPIendpointsStockDetailId());
+    }
+
+    //GET - Get All Stock Detail By id
+    @Step("I set GET api endpoints All Stock_detail Id")
+    public String setGETAPIEndpointsAllStockDetailId() {
+        return url + "stocks/details/bystocks/1";
+    }
+
+    @Step("I send GET HTTP request All Stock_detail id")
+    public void sendGETHTTPRequestAllStockDetailid() {
+        SerenityRest.given()
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .get(setGETAPIEndpointsAllStockDetailId());
+    }
+
     @Step("I receive valid HTTP response code 200 Stock_detail")
     public void receiveGETHTTP200tsockDetail() {
         restAssuredThat(response -> response.statusCode(200));
@@ -102,6 +128,32 @@ public class StockDetail {
                 .get(setGETAPIEndpointsInvalidUrl());
     }
 
+    //GET - Get Stock Detail Invalid By id
+    @Step("I set GET api endpoints invalid Stock_detail Id")
+    public String setGETAPIEndpointsInvalidStockDetailId() {
+        return url + "stocks/details/40";
+    }
+
+    @Step("I send GET HTTP request invalid Stock_detail Id")
+    public void sendGETHTTPRequestInvalidStockDetailId() {
+        SerenityRest.given()
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .get(setGETAPIEndpointsInvalidStockDetailId());
+    }
+
+    //GET - Get All Stock Detail invalid url By All id
+    @Step("I set GET api endpoints Invalid Stock_detail All Id")
+    public String setGETAPIEndpointsInvalidAllId() {
+        return url + "stocks/details/bystocks/";
+    }
+
+    @Step("I send GET HTTP request Invalid Stock_detail All Id")
+    public void sendGETAPIEndpointsInvalidAllId() {
+        SerenityRest.given()
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .get(setGETAPIEndpointsInvalidAllId());
+    }
+
     @Step("I receive valid HTTP response code 404 stock_detail")
     public void receiveValidHTTP404StockDetail() {
         restAssuredThat(response -> response.statusCode(404));
@@ -111,7 +163,7 @@ public class StockDetail {
     //Ganti url saat akan di run
     @Step("I set PUT api endpoints Stock_detail")
     public String setPUTEndpointsStockDetail() {
-        return url + "stocks/details/5";
+        return url + "stocks/details/1";
     }
 
     @Step("I send PUT HTTP request Update_stock")
@@ -145,13 +197,13 @@ public class StockDetail {
     //Ganti url disaat akan di run
     @Step("I set DELETE api endpoints stock_detail")
     public String setDELETEAPIedpointsStockDetail() {
-        return url + "stocks/details/9";
+        return url + "stocks/details/1";
     }
 
     @Step("I send DELETE HTTP request stock_detail")
     public void sendDELETEHTTPRequestStockDetail() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwMTMyNTk4fQ.Wxb2JPOE9QM54-K4ReNoLbEqXoSg9jcwkWXbtmYoRAE")
                 .delete(setDELETEAPIedpointsStockDetail());
     }
 }

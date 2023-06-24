@@ -21,7 +21,7 @@ Feature: Auth Admin
   Scenario: POST - Login Admin with empty email
     Given I set POST api endpoints login_admin
     When I send POST HTTP request invalid email admin
-    Then I receive valid HTTP response code 401 login_admin
+    Then I receive valid HTTP response code 400 login_admin
 
   Scenario: POST - Login Admin with empty value
     Given I set POST api endpoints login_admin
