@@ -1,0 +1,938 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en" data-theme="light" style="color-scheme: light;"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="UTF-8"&gt; <br/>
+  &lt;link rel="icon" type="image/svg+xml" href="/vite.svg"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br/>
+  &lt;title&gt;Vite + React&lt;/title&gt; <br/>
+  &lt;script type="module" crossorigin="" src="/assets/index-5ee54bd6.js"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="/assets/index-eeb5214e.css"&gt; <br/>
+  &lt;style data-emotion="css-global" data-s=""&gt;&lt;/style&gt;<br/>
+  &lt;style data-emotion="css-global" data-s=""&gt;&lt;/style&gt;<br/>
+  &lt;style data-emotion="css-global" data-s=""&gt;&lt;/style&gt;<br/>
+  &lt;style data-emotion="css" data-s=""&gt;&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="chakra-ui-light"&gt; <br/>
+  &lt;div id="root"&gt;<br/>
+   &lt;div class="css-1yeiifd"&gt;<br/>
+    &lt;div class="css-k008qs"&gt;<br/>
+     &lt;div class="css-1bqz0mw"&gt;<br/>
+      &lt;div class="css-1vom2ln"&gt;<br/>
+       &lt;img alt="profile" src="Ellipse78.svg" class="chakra-image css-1r8wenk"&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="css-wt3tfl"&gt;<br/>
+       &lt;p class="chakra-text css-8gdg1k"&gt;admin&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="css-xz5xeh"&gt;<br/>
+       &lt;p&gt;Welcome back!&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="css-dugjgi"&gt;<br/>
+       &lt;p&gt;Admin&lt;/p&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="css-1idtija"&gt;<br/>
+       &lt;div class="css-g71jg8"&gt;<br/>
+        &lt;div class="css-1k9efnl"&gt;<br/>
+         &lt;img src="../icons/white/dashboard-active.svg" alt=""&gt;&lt;a id="button_navigate_dashboard" href="/dashboard"&gt;&lt;p class="chakra-text css-12z2bi6"&gt;Dashboard&lt;/p&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="css-g71jg8"&gt;<br/>
+        &lt;div class="css-1k9efnl"&gt;<br/>
+         &lt;img src="../icons/white/people.svg" alt="people.svg" width="26"&gt;&lt;a id="button_navigate_customerData" href="/customers"&gt;&lt;p class="chakra-text css-a2pou4"&gt;Customer Data&lt;/p&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="css-yia7su"&gt;<br/>
+        &lt;div class="css-1k9efnl"&gt;<br/>
+         &lt;img src="../icons/black/receiptitem.svg" alt="receiptitem.svg" width="26"&gt;&lt;a id="button_navigate_customerTransaction" href="/transactions"&gt;&lt;p class="chakra-text css-1n95ar0"&gt;Customer Transaction&lt;/p&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="css-g71jg8"&gt;<br/>
+        &lt;div class="css-1k9efnl"&gt;<br/>
+         &lt;img src="../icons/white/moneys.svg" alt="people.svg" width="26"&gt;&lt;a id="button_navigate_stocks" href="/stocks"&gt;&lt;p class="chakra-text css-a2pou4"&gt;Stock Credit / Data&lt;/p&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="css-g71jg8"&gt;<br/>
+        &lt;div class="css-1k9efnl"&gt;<br/>
+         &lt;img src="../icons/white/emptywallet.svg" alt="people.svg" width="26"&gt;&lt;a id="button_navigate_cashout" href="/cashout"&gt;&lt;p class="chakra-text css-a2pou4"&gt;Stock Cashout&lt;/p&gt;&lt;/a&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="css-11oc0tt"&gt;<br/>
+     &lt;div class="css-xo87l4"&gt;<br/>
+      &lt;button type="button" class="chakra-button css-okmu2y" id="button_editProfile"&gt;Profile&lt;/button&gt;&lt;button type="button" class="chakra-button css-1h4exbx" id="button_signOut"&gt;Sign Out&lt;/button&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div class="css-eoqagm"&gt;<br/>
+      &lt;p class="chakra-text css-1rsrvdh"&gt;Customer Transaction&lt;/p&gt;<br/>
+      &lt;div class="css-18zz0hj"&gt;<br/>
+       &lt;b class="chakra-text css-oohqa4"&gt;Name&lt;/b&gt;&lt;b class="chakra-text css-1qczvey"&gt;Description&lt;/b&gt;&lt;b class="chakra-text css-cletk3"&gt;Sent To&lt;/b&gt;&lt;b class="chakra-text css-oohqa4"&gt;Amount&lt;/b&gt;&lt;b class="chakra-text css-1f3a3k4"&gt;Date&lt;/b&gt;&lt;b class="chakra-text css-10gp6cw"&gt;Bonus Tpoint&lt;/b&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="css-ount5m"&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;50,000&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 08.55 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+49&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;22,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 08.55 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+22.4&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+1000000&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="GoPay" src="./paymentLogo/gopay.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 13.08 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="BRI" src="./paymentLogo/BRI.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;52,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 18.32 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+52.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="BRI" src="./paymentLogo/BRI.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;32,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 18.34 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+32.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="BRI" src="./paymentLogo/BRI.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;42,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 18.35 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+42.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="BRI" src="./paymentLogo/BRI.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;0&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 19.30 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+0&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;<br/>
+            &lt;img alt="BRI" src="./paymentLogo/BRI.png" class="chakra-image css-1ngw63v"&gt;<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;22,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;24/06/2023 | 19.31 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+22.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.00 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.13 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.15 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.26 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.40 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.41 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.43 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="chakra-card css-520961"&gt;<br/>
+        &lt;div class="css-70qvj9"&gt;<br/>
+         &lt;span class="chakra-avatar css-1knxiyj"&gt;<br/>
+          &lt;div role="img" aria-label="Maria Belina" class="chakra-avatar__initials css-zh7okd"&gt;<br/>
+           MB<br/>
+          &lt;/div&gt;&lt;/span&gt;<br/>
+         &lt;div class="css-1s6ooks"&gt;<br/>
+          &lt;div class="css-17kshzu"&gt;<br/>
+           &lt;h2 class="chakra-heading css-o2389e"&gt;Maria Belina&lt;/h2&gt;<br/>
+           &lt;p class="chakra-text css-1kuy7z7"&gt;Gold Member&lt;/p&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;top up&lt;/b&gt;<br/>
+          &lt;div class="css-gmuwbf"&gt;<br/>
+           &lt;div class="css-1c07t7r"&gt;&lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;b class="chakra-text css-crs6gp"&gt;12,500&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;25/06/2023 | 11.45 WIB&lt;/b&gt;&lt;b class="chakra-text css-crs6gp"&gt;+12.5&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;&lt;span id="__chakra_env" hidden&gt;&lt;/span&gt;<br/>
+  &lt;/div&gt; <br/>
+  &lt;div class="chakra-portal"&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-top" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"&gt;&lt;/div&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-top-left" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);"&gt;&lt;/div&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-top-right" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);"&gt;&lt;/div&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-bottom-left" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);"&gt;&lt;/div&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-bottom" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);"&gt;&lt;/div&gt;<br/>
+   &lt;div role="region" aria-live="polite" id="chakra-toast-manager-bottom-right" style="position: fixed; z-index: var(--toast-z-index, 5500); pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);"&gt;&lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

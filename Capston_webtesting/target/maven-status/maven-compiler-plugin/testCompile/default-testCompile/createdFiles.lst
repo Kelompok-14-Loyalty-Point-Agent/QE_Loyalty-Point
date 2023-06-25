@@ -1,0 +1,16 @@
+Starter\Stepdefitions\SigninSteps.class
+Starter\Stepdefitions\CustomerDataSteps.class
+Starter\Stepdefitions\Failed3SigninSteps.class
+Starter\Stepdefitions\AddStockDataSteps.class
+Starter\Pages\CustomerData.class
+Starter\Stepdefitions\Failed1SigninSteps.class
+Starter\Pages\CustomerTransaction.class
+Starter\Pages\Signin.class
+Starter\Pages\StockCashout.class
+Starter\CucumberTestSuite.class
+Starter\Stepdefitions\CustomerTransactionSteps.class
+Starter\Stepdefitions\AddStockCreditSteps.class
+Starter\Stepdefitions\StockCasoutSteps.class
+Starter\Stepdefitions\Failed2SigninSteps.class
+Starter\Pages\AddStock.class
+Starter\Stepdefitions\Failed4SigninSteps.class
