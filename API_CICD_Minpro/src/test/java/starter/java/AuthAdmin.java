@@ -21,7 +21,7 @@ public class AuthAdmin {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "admin@example.com");
         requestBody.put("name", "admin");
-        requestBody.put("password", "admin123");
+        requestBody.put("password", "newPassword");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
@@ -52,7 +52,7 @@ public class AuthAdmin {
     @Step("I send POST HTTP request invalid email admin")
     public void sendPOSTHTTPRequestInvalidEmailAdmin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "adminrini@example.com");
+        requestBody.put("email", "");
         requestBody.put("name", "admin");
         requestBody.put("password", "admin123");
 
@@ -95,7 +95,7 @@ public class AuthAdmin {
     @Step("I send POST HTTP request logout_admin")
     public void sendPOSTHTTPRequestLogoutAdmin() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5OTQ4NjAzfQ.7H_pw7p7ksLC-QXIdL18ZO0EdW14276CPXWmkMknbWo")
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwMTI4Mzc3fQ.tFYnSa4nR5yR8WVjVQc3pyoz1xHe6kLC8GvlqcHks4I")
                 .post(setPOSTAPIEndpointsLogout_admin());
     }
 

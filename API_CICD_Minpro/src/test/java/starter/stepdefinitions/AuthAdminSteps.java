@@ -33,16 +33,18 @@ public class AuthAdminSteps {
         authAdmin.sendPOSTHTTPRequestInvalidLoginAdmin();
     }
 
+    @Then("I receive valid HTTP response code 401 login_admin")
+    public void receivePOSTHTTP401LoginAdmin() {
+        authAdmin.receivePOSTHTTP401LoginAdmin();
+    }
+
+
     //POST - Login Admin with empty email
     @When("I send POST HTTP request invalid email admin")
     public void sendPOSTHTTPRequestInvalidEmailAdmin() {
         authAdmin.sendPOSTHTTPRequestInvalidEmailAdmin();
     }
 
-    @Then("I receive valid HTTP response code 401 login_admin")
-    public void receivePOSTHTTP401LoginAdmin() {
-        authAdmin.receivePOSTHTTP401LoginAdmin();
-    }
 
     //POST - Login Admin with empty value
     @When("I send POST HTTP request empty value admin")

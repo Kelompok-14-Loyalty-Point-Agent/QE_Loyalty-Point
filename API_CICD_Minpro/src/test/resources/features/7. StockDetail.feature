@@ -28,10 +28,30 @@ Feature: Stock Details
       When I send GET HTTP request Stock_detail
       Then I receive valid HTTP response code 200 Stock_detail
 
+    Scenario: GET - Get Stock Detail By id
+      Given I set GET api endpoints Stock_detail Id
+      When I send GET HTTP request Stock_detail Id
+      Then I receive valid HTTP response code 200 Stock_detail
+
+  Scenario: GET - Get All Stock Detail By id
+    Given I set GET api endpoints All Stock_detail Id
+    When I send GET HTTP request All Stock_detail id
+    Then I receive valid HTTP response code 200 Stock_detail
+
     #Negatif - GET
   Scenario: GET - Get list all Stock with invalid url
     Given I set GET api endpoints invalid url stock_detail
     When I send GET HTTP request invalid url stock_detail
+    Then I receive valid HTTP response code 404 stock_detail
+
+  Scenario: GET - Get Stock Detail Invalid By id
+    Given I set GET api endpoints invalid Stock_detail Id
+    When I send GET HTTP request invalid Stock_detail Id
+    Then I receive valid HTTP response code 404 stock_detail
+
+  Scenario: GET - Get All Stock Detail invalid url By All id
+    Given I set GET api endpoints Invalid Stock_detail All Id
+    When I send GET HTTP request Invalid Stock_detail All Id
     Then I receive valid HTTP response code 404 stock_detail
 
       #positif-PUT
