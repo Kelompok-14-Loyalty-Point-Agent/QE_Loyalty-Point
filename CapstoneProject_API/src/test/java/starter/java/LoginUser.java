@@ -20,9 +20,9 @@ public class LoginUser {
     @Step("I send POST HTTP request login")
     public void sendPostHttpRequestLogin() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "rinimaulida17@example.com");
+        requestBody.put("email", "newCustomerEmailo@example.com");
         requestBody.put("name", "customer");
-        requestBody.put("password", "customer123");
+        requestBody.put("password", "newPassword");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")

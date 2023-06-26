@@ -60,6 +60,22 @@ public class RedeemBenefitSteps {
         redeemBenefit.sendGETHTPPRequestAllRedeem();
     }
 
+    //GET - Get wrong url voucher
+    @Given("I set GET api endpoints wrong url Voucher")
+    public void setGETAPIEndpointsWrongUrlVoucher() {
+        redeemBenefit.setGETAPIEndpointsWrongUrlVoucher();
+    }
+
+    @When("I send GET HTTP request  wrong url Voucher")
+    public void sendGETHTTPRequestWrongUrlVoucher() {
+        redeemBenefit.sendGETHTTPRequestWrongUrlVoucher();
+    }
+
+    @Then("I receive valid HTTP response code 404 voucher")
+    public void receiveValidHTTP404Voucher() {
+        redeemBenefit.receiveValidHTTP404Voucher();
+    }
+
     //POST - Add Redeem Voucher
     @Given("I set POST api endpoints Redeem Voucher")
     public void setPOSTAPIEndpointsRedeemVoucher() {
@@ -74,5 +90,16 @@ public class RedeemBenefitSteps {
     @Then("I receive valid HTTP response code 201 voucher")
     public void receiveValidHTTP201Voucher() {
         redeemBenefit.receiveValidHTTP201Voucher();
+    }
+
+    //POST - Add Redeem Voucher User_Id Empty
+    @When("I send POST HTTP request Redeem Voucher User_Id Empty")
+    public void sendPOSTHTTPRequestRedeemVoucherUserIdEmpty() {
+        redeemBenefit.sendPOSTHTTPRequestRedeemVoucherUserIdEmpty();
+    }
+
+    @Then("I receive valid HTTP response code 400 voucher")
+    public void receiveValidHTTP400Voucher(){
+        redeemBenefit.receiveValidHTTP400Voucher();
     }
 }

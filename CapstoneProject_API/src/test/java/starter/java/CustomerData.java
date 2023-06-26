@@ -72,7 +72,7 @@ public class CustomerData {
     //GET - Get Invalid All Customer Data By Id
     @Step("I set GET api endpoints Invalid Customer_data by id")
     public String setGETAPIendpointsInvalidCustomerDataById() {
-        return url + "users/6";
+        return url + "users/5";
     }
 
     @Step("I send GET HTTP request Invalid Customer_data by id")
@@ -96,7 +96,7 @@ public class CustomerData {
     @Step("I send PUT HTTP request Customer_data")
     public void sendPUTHTTPRequestCustomerData() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "newCustomerEmail@example.com");
+        requestBody.put("email", "newCustomerEmailo@example.com");
         requestBody.put("phone", "082218807767");
         SerenityRest.given()
                 .header("Content-Type", "application/json")
@@ -127,7 +127,7 @@ public class CustomerData {
     //Ganti URL saat akan run
     @Step("I set DELETE api endpoints Customer_data")
     public String setDELETEEnspointsCustomerData() {
-        return url + "users/customers/3";
+        return url + "users/customers/4";
     }
 
     @Step("I send DELETE HTTP request Customer_data")
