@@ -22,7 +22,7 @@ public class Transaction {
         requestBody.put("phone", "081382815860");
         requestBody.put("stock_details_id", 1);
         requestBody.put("payment_method", "shoope");
-        requestBody.put("user_id", 5);
+        requestBody.put("user_id", 2);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
                 .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwMjEzMjcwfQ.wjqxWHZq4vjgFx0gjAWCKIieujeghceWz38oZEGCjT0")
@@ -40,7 +40,7 @@ public class Transaction {
     public void sendPOSTHTTPRequestTransactionEmptyPhone() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("phone", "");
-        requestBody.put("user_id", 5);
+        requestBody.put("user_id", 2);
         requestBody.put("voucher_id", 1);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
@@ -89,7 +89,7 @@ public class Transaction {
     //GET - Get add new transaction By Id
     @Step("I set POST api endpoints Transaction_ById")
     public String setGETAPIEndpointsTransactionById() {
-        return url + "transactions/1";
+        return url + "transactions/2";
     }
 
     @Step("I send GET HTTP request Transaction_ById")

@@ -17,7 +17,7 @@ public class ProfilCustomer {
 
     @Step("I set GET api endpoints Profil_CustomerId")
     public String setGETAPIEndpointsProfilCustomerId() {
-        return url + "users/5";
+        return url + "users/2";
     }
 
     @Step("I send GET HTTP request Profil_CustomerId")
@@ -48,7 +48,7 @@ public class ProfilCustomer {
     //GET - Get Profil Customer By Id wrong Url
     @Step("I set GET api endpoints ProfilCustomer_WrongUrl")
     public String setGETAPIEndpointsProfilCustomerWrongUrl() {
-        return url + "users/2";
+        return url + "users/5";
     }
 
     @Step("I send GET HTTP request ProfilCustomer_WrongUrl")
@@ -79,7 +79,7 @@ public class ProfilCustomer {
     //PUT - Put Update Profil Customer
     @Step("I set PUT api endpoints UpdateProfil_Customer")
     public String setPUTAPIEndpointsUpdateProfilCustomer() {
-        return url + "users/profiles/customer/5";
+        return url + "users/profiles/customer/3";
     }
 
     @Step("I send PUT HTTP request UpdateProfil_Customer")
@@ -101,7 +101,7 @@ public class ProfilCustomer {
     //PUT - Put Update password Profil Customer
     @Step("I set PUT api endpoints Update password")
     public String setPUTAPIEndpointsUpdatePassword() {
-        return url + "users/profiles/password/5";
+        return url + "users/profiles/password/2";
     }
 
     @Step("I send PUT HTTP request Update password")
@@ -138,7 +138,7 @@ public class ProfilCustomer {
     //PUT - Put Update Profil Customer Wrong Id
     @Step("I set PUT api endpoints UpdateProfil_WrongId")
     public String setPUTAPIEndpointsUPdateProfilWrongId() {
-        return url + "users/profiles/password/2";
+        return url + "users/profiles/password/5";
     }
 
     @Step("I send PUT HTTP request UpdateProfil_WrongId")
