@@ -17,19 +17,19 @@ public class Register {
         return url + "/auth/register";
     }
 
-    ///POSITIF
-//    @Step("I send POST HTTP request register")
-//    public void sendPostHttpRequestRegister() {
-//        JSONObject requestBody = new JSONObject();
-//        String alphabet = "abcdef";
-//        String temp = RandomStringUtils.random(8, alphabet);
-//        String email = temp.substring(0, temp.length() - 9) + "@mail.com";
-//        requestBody.put("email", email);
-//        requestBody.put("name", "rinimaulida34");
-//        requestBody.put("password", "customer123");
-//
-//        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
-//    }
+    //POSITIF
+    @Step("I send POST HTTP request register")
+    public void sendPostHttpRequestRegister() {
+        JSONObject requestBody = new JSONObject();
+        String alphabet = "abcdef";
+        String temp = RandomStringUtils.random(8, alphabet);
+        String email = temp.substring(0, temp.length() - 9) + "@mail.com";
+        requestBody.put("email", email);
+        requestBody.put("name", "rinimaulida34");
+        requestBody.put("password", "customer123");
+
+        SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setPostApiEndpointRegister());
+    }
 
 
     ///NEGATIFFF
