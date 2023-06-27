@@ -9,7 +9,9 @@ import test.automation.driver.AndroidDriverPool;
 import test.automation.driver.DriverPool;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
@@ -62,4 +64,16 @@ public class BasePageObject {
     public String getText(By locator){
         return find(locator).getText();
     }
+
+    // public static void scrollDown(){
+    //     Dimension dimension = AppDriver.getDriver().manage().window().getSize();
+    //     int scrollStart = (int) (dimension.getHeight() * 0.5);
+    //     int scrollEnd = (int) (dimension.getHeight() * 0.2);
+
+    //     new TouchAction((PerformsTouchActions) AppDriver.getDriver())
+    //             .press(PointOption.point(0, scrollStart))
+    //             .waitAction(WaitOptions.waitOptions(Duration.ofSeconds(1)))
+    //             .moveTo(PointOption.point(0, scrollEnd))
+    //             .release().perform();
+    // }
 }
