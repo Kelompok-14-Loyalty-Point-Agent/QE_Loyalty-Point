@@ -15,10 +15,6 @@ public class RegisterScreen extends BasePageObject {
     public String name = createRandomName();
 
     AppiumHelper helper = new AppiumHelper (getDriver());
-    
-    // By textRegister(){ 
-    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Create a new account\"]");
-    // }
 
     By buttonSkip() { 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Skip\"]");
@@ -57,26 +53,17 @@ public class RegisterScreen extends BasePageObject {
         return MobileBy.xpath("//android.view.View[@content-desc=\"Server Gagal\"]");
     }
 
-    // By fieldAlertPassword(){ 
-    //     return MobileBy.xpath("//android.view.View[@content-desc=\"password can not empty\"]");
-    // }
-    
-    // By buttonAlert(){ 
-    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Gagal :(\"]");
-    // }
-
-    // public void clickTextRegister(){ 
-    //     click(textRegister());
-    // }
-
+    @Step
     public void clickButtonCreateNewAccount(){ 
         click(buttonCreateNewAccount());
     }
 
+    @Step
     public void clickButtonSkip(){ 
         click(buttonSkip());
     }
 
+    @Step
     public void inputFullName(String fullname) {
         Faker faker = new Faker();
         name = faker.name().fullName();
@@ -85,24 +72,28 @@ public class RegisterScreen extends BasePageObject {
         onType(fieldFullName(), createRandomName());
     }
 
+    @Step
     public void inputEmptyFullName(String fullname) {
         click(fieldFullName());
         clear(fieldFullName());
         sendKeys(fieldFullName(),fullname);
     }
 
+    @Step
     public void inputEmail(String email){
         click(fieldEmail());
         clear(fieldEmail());
         onType(fieldEmail(), createRandomName() + "@gmail.com");
     }
 
+    @Step
     public void inputEmptyEmail(String email){
         click(fieldEmail());
         clear(fieldEmail());
         sendKeys(fieldEmail(),email);
     }
 
+    @Step
     public void inputPassword(String password){
         click(fieldPassword());
         clear(fieldPassword());
@@ -110,6 +101,7 @@ public class RegisterScreen extends BasePageObject {
         helper.scrollDown();
     }
 
+    @Step
     public void inputEmptyPassword(String password){
         click(fieldPassword());
         clear(fieldPassword());
@@ -117,57 +109,58 @@ public class RegisterScreen extends BasePageObject {
         helper.scrollDown();
     }
 
+    @Step
     public void inputConfrimPassword(String password){
         click(fieldConfrimPassword());
         clear(fieldConfrimPassword());
         sendKeys(fieldPassword(),password);
     }
 
+    @Step
     public void inputEmptyConfrimPassword(String password){
         click(fieldConfrimPassword());
         clear(fieldConfrimPassword());
         sendKeys(fieldPassword(),password);
     }
 
+    @Step
     public void inputCorrectFullName(String fullname) {
         click(fieldFullName());
         clear(fieldFullName());
         onType(fieldFullName(),fullname);
     }
 
+    @Step
     public void inputEmailWithPassword(String email){
         click(fieldEmail());
         clear(fieldEmail());
         onType(fieldEmail(),email);
     }
 
+    @Step
     public void inputPasswordWithEmail(String email){
         click(fieldPassword());
         clear(fieldPassword());
         onType(fieldPassword(),email);
     }
 
+    @Step
     public void clickButtonCreateAnAccount(){ 
         helper.scrollDown();
         click(buttonCreateAnAccount());
     }
 
+    @Step
     public void verifyAlertEmpty(){ 
         Assertions.assertTrue(find(fieldAlertTerjadiKesalahan()).isDisplayed());
     }
 
+    @Step
     public void verifyAlertExistingAccount(){ 
         Assertions.assertTrue(find(fieldAlertServerGagal()).isDisplayed());
     }
 
-    // public void verifyAlertPassword(){ 
-    //     Assertions.assertTrue(find(fieldAlertPassword()).isDisplayed());
-    // }
-
-    // public void verifyAlertButton() { 
-    //     Assertions.assertTrue(find(buttonAlert()).isDisplayed());
-    // }
-
+    @Step
     public String createRandomName(){
         Faker faker = new Faker();
         return faker.name().firstName();

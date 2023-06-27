@@ -35,33 +35,6 @@ public class GetRewardScreen extends BasePageObject {
         return MobileBy.xpath("//android.view.View[@content-desc=\"Poin anda tidak cukup!\"]");
     }
 
-   
-
-    // By buttonBuy(){
-    //     return MobileBy.xpath("//android.widget.Button[@content-desc=\"Buy\"]");
-    // }
-
-    // By dropdownChoosePayment(){
-    //     return MobileBy.xpath("//android.widget.ImageView[2]");
-    // }
-
-    // By chooseBRI(){
-    //     return MobileBy.xpath("//android.widget.ImageView[@content-desc=\"BRI\"]");
-    // }
-
-    // By buttonPayNow(){
-    //     return MobileBy.xpath("//android.widget.Button[@content-desc=\"Pay Now\"]");
-    // }
-
-    // By buttonDetailPoint(){
-    //     return MobileBy.xpath("//android.widget.Button[@content-desc=\"Detail Point\"]");
-    // }
-
-    // By buttonDone(){
-    //     return MobileBy.xpath("//android.widget.Button[@content-desc=\"Done\"]");
-    // }
-
-
     @Step
     public void clickButtonGetReward(){
         click(buttonGetReward());
@@ -77,13 +50,6 @@ public class GetRewardScreen extends BasePageObject {
         click(cartInternetKuota());
     }
 
-    // @Step
-    // public void inputFieldPhoneNumber(String number){
-    //     click(fieldPhoneNumber());
-    //     clear(fieldPhoneNumber());
-    //     sendKeys(fieldPhoneNumber(),number);
-    // }
-
     @Step
     public void clickButtonReedemYourPoint(){
         click(buttonReedemyourPoint());
@@ -92,35 +58,5 @@ public class GetRewardScreen extends BasePageObject {
     public void verifyAlertPoinTidakCukup(){ 
         Assertions.assertTrue(find(fieldAlertPoin()).isDisplayed());
     }
-
-    // @Step
-    // public void clickButtonBuy(){
-    //     click(buttonBuy());
-    // }
-
-    // @Step
-    // public void clickDropdownChoosePayment(){
-    //     click(dropdownChoosePayment());
-    // }
-
-    // @Step
-    // public void clickChooseBRI(){
-    //     click(chooseBRI());
-    // }
-
-    // @Step
-    // public void clickButtonPayNow(){
-    //     click(buttonPayNow());
-    // }
-
-    // @Step
-    // public void clickButtonDetailPoint(){
-    //     click(buttonDetailPoint());
-    // }
-
-    // @Step
-    // public void clickButtonDone(){
-    //     click(buttonDone());
-    // }
 
 }

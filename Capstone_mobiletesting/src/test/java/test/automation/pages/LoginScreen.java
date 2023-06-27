@@ -87,11 +87,6 @@ public class LoginScreen extends BasePageObject {
     }
 
 
-
-    // By buttonLogin(){ 
-    //     return MobileBy.xpath("//android.widget.Button[@content-desc=\"Login\"]");
-    // }
-
     By fieldAlertEmail(){ 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Email tidak tersedia\"]");
     }
@@ -103,12 +98,6 @@ public class LoginScreen extends BasePageObject {
     By buttonAlert(){ 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Terjadi Kesalahan!\"]");
     }
-
-    // By headerProducts() { 
-    //     return MobileBy.xpath("//android.view.View[@content-desc=\"Products\"]");
-    // }
-
-
 
     @Step
     public void clickButtonSkip(){
@@ -126,12 +115,10 @@ public class LoginScreen extends BasePageObject {
         sendKeys(fieldEmail(),email);
     }
 
-
     @Step
     public void inputFieldPassword(String password){
         click(fieldPassword());
-        sendKeys(fieldPassword(),password);
-        
+        sendKeys(fieldPassword(),password);    
     }
     
     @Step
@@ -145,27 +132,20 @@ public class LoginScreen extends BasePageObject {
         isDisplayed(landingpage());
     }
 
-    // public void clickButtonLogin(){ 
-    //     click(buttonLogin());
-    // }
-
+    @Step
     public void verifyAlertEmail(){ 
         Assertions.assertTrue(find(fieldAlertEmail()).isDisplayed());
     }
 
+    @Step
     public void verifyAlertPassword(){ 
         Assertions.assertTrue(find(fieldAlertPassword()).isDisplayed());
-
     }
 
+    @Step
     public void verifyAlertButton() { 
         Assertions.assertTrue(find(buttonAlert()).isDisplayed());
     }
-
-    // public void verifyHeaderProduct(){
-    //     Assertions.assertTrue(find(headerProducts()).isDisplayed());
-    
-    // }
 
     @Step
     public void clickButtonForgot(){

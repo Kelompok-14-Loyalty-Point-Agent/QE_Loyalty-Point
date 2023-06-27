@@ -4,7 +4,6 @@ Feature: FAQ
   I want to see FAQ
   So that i can see the FAQ list
 
-
 Scenario Outline: As a user i want to see the FAQ list
     Given I am on the landing page
     When I click button skip

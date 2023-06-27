@@ -25,7 +25,6 @@ Scenario Outline: As a user i want to register account with valid data
     Then I get result the error message in register
 
 Scenario Outline: As a user i want to register account without input email
-
     Given I am on the get point page
     When I click button create a new account 
     And I input correct fullname in register
@@ -35,8 +34,7 @@ Scenario Outline: As a user i want to register account without input email
     And I click create an account button
     Then I get result the error message in register
 
- Scenario Outline: As a user i want to register account without input password
-
+Scenario Outline: As a user i want to register account without input password
     Given I am on the get point page
     When I click button create a new account 
     And I input correct fullname in register
@@ -46,8 +44,7 @@ Scenario Outline: As a user i want to register account without input email
     And I click create an account button
     Then I get result the error message in register
 
-  Scenario Outline: As a user i want to register account without input confirm password
-
+Scenario Outline: As a user i want to register account without input confirm password
     Given I am on the get point page
     When I click button create a new account 
     And I input correct fullname in register
