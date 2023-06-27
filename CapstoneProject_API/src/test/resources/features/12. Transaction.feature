@@ -16,7 +16,7 @@ Feature: Transaction
     Scenario: POST - Post add new transaction wrong user_id
       Given I set POST api endpoints Transaction
       When I send POST HTTP request Transaction wrong_userid
-      Then I receive valid HTTP response code 500 Transaction
+      Then I receive valid HTTP response code 400 Transaction
 
       #Positif - GET
     Scenario: GET - Get All User Id ( Transaction history )

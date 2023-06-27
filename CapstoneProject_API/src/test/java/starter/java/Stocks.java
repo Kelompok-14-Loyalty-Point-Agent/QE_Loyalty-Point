@@ -22,7 +22,7 @@ public class Stocks {
     @Step("I send GET HTTP request stock")
     public void sendGETHTTPRequestStock() {
         SerenityRest.given()
-                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsStock());
     }
 
@@ -35,7 +35,7 @@ public class Stocks {
     @Step("I send GET api endpoints stock")
     public void sendGETTTPRequestStock_id() {
         SerenityRest.given()
-                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsStock_id());
     }
 
@@ -53,7 +53,7 @@ public class Stocks {
     @Step("I send GET HTTP request invalid_id")
     public void sendGETHTTPRequestInvalid_id() {
         SerenityRest.given()
-                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsInvalid_id());
     }
 
@@ -66,7 +66,7 @@ public class Stocks {
     @Step("I send GET HTTP request invalid_url")
     public void sendGETHTTPRequestInvalidUrl() {
         SerenityRest.given()
-                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization" , " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsInvalidUrl());
     }
 

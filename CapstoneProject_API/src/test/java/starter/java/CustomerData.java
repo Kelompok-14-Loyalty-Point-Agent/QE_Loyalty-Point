@@ -21,7 +21,7 @@ public class CustomerData {
     @Step("I send GET HTTP request Customer_data")
     public void sendGETHTTPendpointsCustomerdata() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsCustomerData());
     }
 
@@ -34,7 +34,7 @@ public class CustomerData {
     @Step("I send GET HTTP request Customer_data by id")
     public void sendGETHTTPRequestCustomerById() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsCustomerById());
     }
 
@@ -47,7 +47,7 @@ public class CustomerData {
     @Step("I send GET HTTP request Recent_activities")
     public void sendGETHTTPRequestRecentActivities() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIEndpointsRecentActivities());
     }
 
@@ -65,20 +65,20 @@ public class CustomerData {
     @Step("I send GET HTTP request Invalid Url Customer_data")
     public void sendGETHTTPRequestInvalidUrlCustomerData() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETEndpointsInvalidUrlCustomerData());
     }
 
     //GET - Get Invalid All Customer Data By Id
     @Step("I set GET api endpoints Invalid Customer_data by id")
     public String setGETAPIendpointsInvalidCustomerDataById() {
-        return url + "users/5";
+        return url + "users/10";
     }
 
     @Step("I send GET HTTP request Invalid Customer_data by id")
     public void sendGETHTTPRequestInvalidCustomerDataById() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .get(setGETAPIendpointsInvalidCustomerDataById());
     }
 
@@ -96,11 +96,11 @@ public class CustomerData {
     @Step("I send PUT HTTP request Customer_data")
     public void sendPUTHTTPRequestCustomerData() {
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "newCustomerEmailo@example.com");
+        requestBody.put("email", "newCustomerEmail@example.com");
         requestBody.put("phone", "082218807767");
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .body(requestBody.toJSONString())
                 .put( setPUTAPIEndpointsCustomerData());
     }
@@ -113,7 +113,7 @@ public class CustomerData {
         requestBody.put("phone", "082218807767");
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .body(requestBody.toJSONString())
                 .put( setPUTAPIEndpointsCustomerData());
     }
@@ -127,13 +127,13 @@ public class CustomerData {
     //Ganti URL saat akan run
     @Step("I set DELETE api endpoints Customer_data")
     public String setDELETEEnspointsCustomerData() {
-        return url + "users/customers/4";
+        return url + "users/customers/5";
     }
 
     @Step("I send DELETE HTTP request Customer_data")
     public void sendDELETEHTTPRequestCustomerData() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxNzgyfQ.l1u7UKUlBDVZCYWfqFnxZQgHMXL32n2i2f4A-WdEOwM")
                 .delete(setDELETEEnspointsCustomerData());
     }
 

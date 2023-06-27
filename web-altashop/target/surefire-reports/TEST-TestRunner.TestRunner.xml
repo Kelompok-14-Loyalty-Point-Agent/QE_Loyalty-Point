@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestRunner.TestRunner" time="1.852" tests="7" errors="7" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="19"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\MiniProject\web-altashop\target\test-classes;D:\MiniProject\web-altashop\target\classes;C:\Users\User\.m2\repository\io\cucumber\cucumber-java\6.9.0\cucumber-java-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-core\6.9.0\cucumber-core-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin\6.9.0\cucumber-gherkin-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.0\cucumber-gherkin-messages-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\messages\13.2.0\messages-13.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\User\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-plugin\6.9.0\cucumber-plugin-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\docstring\6.9.0\docstring-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\User\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-junit\6.9.0\cucumber-junit-6.9.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\User\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\User\.m2\repository\net\masterthought\cucumber-reporting\5.4.0\cucumber-reporting-5.4.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\User\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\User\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\User\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\User\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\User\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\User\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\User\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\User\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="19"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ID"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
+    <property name="sun.java.command" value="C:\Users\User\AppData\Local\Temp\surefire2287091876837631523\surefirebooter1522743195289152076.jar C:\Users\User\AppData\Local\Temp\surefire2287091876837631523 2023-05-12T12-25-38_688-jvmRun1 surefire12567539923883414240tmp surefire_052792005350456207tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\MiniProject\web-altashop\target\test-classes;D:\MiniProject\web-altashop\target\classes;C:\Users\User\.m2\repository\io\cucumber\cucumber-java\6.9.0\cucumber-java-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-core\6.9.0\cucumber-core-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin\6.9.0\cucumber-gherkin-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.9.0\cucumber-gherkin-messages-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\messages\13.2.0\messages-13.2.0.jar;C:\Users\User\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\User\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-plugin\6.9.0\cucumber-plugin-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\docstring\6.9.0\docstring-6.9.0.jar;C:\Users\User\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\User\.m2\repository\io\cucumber\create-meta\2.0.4\create-meta-2.0.4.jar;C:\Users\User\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\User\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\User\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\User\.m2\repository\io\cucumber\cucumber-junit\6.9.0\cucumber-junit-6.9.0.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\User\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\User\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\User\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\User\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\User\.m2\repository\net\masterthought\cucumber-reporting\5.4.0\cucumber-reporting-5.4.0.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\User\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.10.1\jackson-datatype-jsr310-2.10.1.jar;C:\Users\User\.m2\repository\org\apache\velocity\velocity-engine-core\2.1\velocity-engine-core-2.1.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\User\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\User\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\User\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\User\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\User\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\User\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20191001.1\owasp-java-html-sanitizer-20191001.1.jar;C:\Users\User\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\User\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\User\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\User"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\MiniProject\web-altashop"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\User\AppData\Local\Temp\surefire2287091876837631523\surefirebooter1522743195289152076.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="19.0.2+7-44"/>
+    <property name="user.name" value="User"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\User\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
+    <property name="java.version" value="19.0.2"/>
+    <property name="user.dir" value="D:\MiniProject\web-altashop"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_281\bin;C:\flutter_windows_2.5.0-stable\flutter\bin;C:\Program Files\Dart\dart-sdk\bin;C:\Program Files\nodejs\;D:\xampp8\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\gradle-8.0.2\bin;C:\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools;C:\webdrivers;C:\Users\User\AppData\Local\Microsoft\WindowsApps;D:\MASTER\IntelliJ IDEA 2020.3.1\bin;;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\xampp\mysql\bin;C:\flutter\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Roaming\Composer\vendor\bin;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="19.0.2+7-44"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="63.0"/>
+  </properties>
+  <testcase name="As user i have be able to buy product" classname="As user I want to buy product" time="0.288">
+    <error message="The step &quot;I Opennn browserrr&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Opennn browserrr&quot;)&#10;public void i_opennn_browserrr() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Openn websitee alta-shopp&quot;)&#10;public void openn_websitee_alta_shopp() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I click beli in items product&quot;)&#10;public void i_click_beli_in_items_product() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I can see keranjang to buy product&quot;)&#10;public void i_can_see_keranjang_to_buy_product() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can bayar product&quot;)&#10;public void i_can_bayar_product() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Opennn browserrr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Opennn browserrr")
+public void i_opennn_browserrr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Openn websitee alta-shopp")
+public void openn_websitee_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click beli in items product")
+public void i_click_beli_in_items_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I can see keranjang to buy product")
+public void i_can_see_keranjang_to_buy_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I can bayar product")
+public void i_can_bayar_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: As user i have be able to buy product &amp#27;[90m# src/test/resources/Features/buy.feature:3&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Opennn browserrr&amp#27;[0m                      &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpenn websitee alta-shopp&amp#27;[0m                &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click beli in items product&amp#27;[0m             &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI can see keranjang to buy product&amp#27;[0m        &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI can bayar product&amp#27;[0m                      &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="As user i have be able to see detail product" classname="As user I want to see details product" time="0.031">
+    <error message="The step &quot;I Openn browserrr&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Openn browserrr&quot;)&#10;public void i_openn_browserrr() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Open websitee alta-shopp&quot;)&#10;public void open_websitee_alta_shopp() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I click detail in items product&quot;)&#10;public void i_click_detail_in_items_product() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I can see detail product&quot;)&#10;public void i_can_see_detail_product() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Openn browserrr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Openn browserrr")
+public void i_openn_browserrr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open websitee alta-shopp")
+public void open_websitee_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click detail in items product")
+public void i_click_detail_in_items_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I can see detail product")
+public void i_can_see_detail_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: As user i have be able to see detail product &amp#27;[90m# src/test/resources/Features/detail.feature:3&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Openn browserrr&amp#27;[0m                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpen websitee alta-shopp&amp#27;[0m                        &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click detail in items product&amp#27;[0m                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI can see detail product&amp#27;[0m                        &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="as a user i have be able to success login" classname="Login Feature" time="0.02">
+    <error message="The step &quot;I Open browser&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Open browser&quot;)&#10;public void i_open_browser() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Open website alta-shop&quot;)&#10;public void open_website_alta_shop() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I Enter a valid email and password&quot;)&#10;public void i_enter_a_valid_email_and_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I click login button&quot;)&#10;public void i_click_login_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;I am on the home page&quot;)&#10;public void i_am_on_the_home_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Open browser" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browser")
+public void i_open_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shop")
+public void open_website_alta_shop() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I Enter a valid email and password")
+public void i_enter_a_valid_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click login button")
+public void i_click_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I am on the home page")
+public void i_am_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: as a user i have be able to success login &amp#27;[90m# src/test/resources/Features/login.feature:3&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Open browser&amp#27;[0m                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpen website alta-shop&amp#27;[0m                       &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI Enter a valid email and password&amp#27;[0m            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click login button&amp#27;[0m                          &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI am on the home page&amp#27;[0m                        &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="as a user i have be able to invalid login" classname="Login Feature" time="0.011">
+    <error message="The step &quot;I Open browser&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Open browser&quot;)&#10;public void i_open_browser() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Open website alta-shop&quot;)&#10;public void open_website_alta_shop() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I Enter a invalid email and password&quot;)&#10;public void i_enter_a_invalid_email_and_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;I click login buttonn&quot;)&#10;public void i_click_login_buttonn() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;User see error message record not found&quot;)&#10;public void user_see_error_message_record_not_found() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Open browser" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browser")
+public void i_open_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shop")
+public void open_website_alta_shop() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I Enter a invalid email and password")
+public void i_enter_a_invalid_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click login buttonn")
+public void i_click_login_buttonn() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User see error message record not found")
+public void user_see_error_message_record_not_found() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: as a user i have be able to invalid login &amp#27;[90m# src/test/resources/Features/login.feature:10&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Open browser&amp#27;[0m                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpen website alta-shop&amp#27;[0m                       &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI Enter a invalid email and password&amp#27;[0m         &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI click login buttonn&amp#27;[0m                         &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser see error message record not found&amp#27;[0m      &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="As user i have be able to logout in AltaShop" classname="As user I want to logout in AltaShop" time="0.021">
+    <error message="The step &quot;i open browser - logout&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;i open browser - logout&quot;)&#10;public void i_open_browser_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@Given(&quot;i am on the home page - logout&quot;)&#10;public void i_am_on_the_home_page_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;i input valid email - logout&quot;)&#10;public void i_input_valid_email_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;i input valid password - logout&quot;)&#10;public void i_input_valid_password_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;i click login button - logout&quot;)&#10;public void i_click_login_button_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;i click account menu&quot;)&#10;public void i_click_account_menu() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;i click Logout&quot;)&#10;public void i_click_logout() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user successfull logout and redirect to login page&quot;)&#10;public void user_successfull_logout_and_redirect_to_login_page() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "i open browser - logout" is undefined. You can implement it using the snippet(s) below:
+
+@Given("i open browser - logout")
+public void i_open_browser_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("i am on the home page - logout")
+public void i_am_on_the_home_page_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i input valid email - logout")
+public void i_input_valid_email_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i input valid password - logout")
+public void i_input_valid_password_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click login button - logout")
+public void i_click_login_button_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click account menu")
+public void i_click_account_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click Logout")
+public void i_click_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user successfull logout and redirect to login page")
+public void user_successfull_logout_and_redirect_to_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: As user i have be able to logout in AltaShop    &amp#27;[90m# src/test/resources/Features/logout.feature:3&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mi open browser - logout&amp#27;[0m                           &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mi am on the home page - logout&amp#27;[0m                      &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mi input valid email - logout&amp#27;[0m                       &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mi input valid password - logout&amp#27;[0m                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mi click login button - logout&amp#27;[0m                       &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mi click account menu&amp#27;[0m                               &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mi click Logout&amp#27;[0m                                      &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser successfull logout and redirect to login page&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="As user i have be able to success crete account" classname="Register Feature" time="0.029">
+    <error message="The step &quot;I Open browserr&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Open browserr&quot;)&#10;public void i_open_browserr() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Open website alta-shopp&quot;)&#10;public void open_website_alta_shopp() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input valid name&quot;)&#10;public void user_input_valid_name() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input valid email&quot;)&#10;public void user_input_valid_email() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input valid password&quot;)&#10;public void user_input_valid_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user click register button&quot;)&#10;public void user_click_register_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user success to create account and redirect to login&quot;)&#10;public void user_success_to_create_account_and_redirect_to_login() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Open browserr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browserr")
+public void i_open_browserr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shopp")
+public void open_website_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid name")
+public void user_input_valid_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid email")
+public void user_input_valid_email() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid password")
+public void user_input_valid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user click register button")
+public void user_click_register_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user success to create account and redirect to login")
+public void user_success_to_create_account_and_redirect_to_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: As user i have be able to success crete account   &amp#27;[90m# src/test/resources/Features/register.feature:3&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Open browserr&amp#27;[0m                                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpen website alta-shopp&amp#27;[0m                              &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser input valid name&amp#27;[0m                                &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser input valid email&amp#27;[0m                                &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser input valid password&amp#27;[0m                             &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser click register button&amp#27;[0m                            &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser success to create account and redirect to login&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="As user i have be able to fail crete account" classname="Register Feature" time="0.021">
+    <error message="The step &quot;I Open browserr&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;I Open browserr&quot;)&#10;public void i_open_browserr() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;&#10;&#10;Some other steps were also undefined:&#10;&#10;@When(&quot;Open website alta-shopp&quot;)&#10;public void open_website_alta_shopp() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input empty fields name&quot;)&#10;public void user_input_empty_fields_name() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input empty fields email&quot;)&#10;public void user_input_empty_fields_email() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user input empty fields password&quot;)&#10;public void user_input_empty_fields_password() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@When(&quot;user click register button&quot;)&#10;public void user_click_register_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;@Then(&quot;user fail to create account and redirect to login&quot;)&#10;public void user_fail_to_create_account_and_redirect_to_login() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException">io.cucumber.junit.UndefinedStepException: 
+The step "I Open browserr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browserr")
+public void i_open_browserr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shopp")
+public void open_website_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields name")
+public void user_input_empty_fields_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields email")
+public void user_input_empty_fields_email() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields password")
+public void user_input_empty_fields_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user click register button")
+public void user_click_register_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user fail to create account and redirect to login")
+public void user_fail_to_create_account_and_redirect_to_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+</error>
+    <system-out><![CDATA[
+Scenario: As user i have be able to fail crete account   &amp#27;[90m# src/test/resources/Features/register.feature:12&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mI Open browserr&amp#27;[0m                                  &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mOpen website alta-shopp&amp#27;[0m                           &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser input empty fields name&amp#27;[0m                      &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser input empty fields email&amp#27;[0m                      &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser input empty fields password&amp#27;[0m                   &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser click register button&amp#27;[0m                         &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser fail to create account and redirect to login&amp#27;[0m &amp#27;[90m# null&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>

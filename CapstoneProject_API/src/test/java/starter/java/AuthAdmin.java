@@ -21,7 +21,7 @@ public class AuthAdmin {
         JSONObject requestBody = new JSONObject();
         requestBody.put("email", "admin@example.com");
         requestBody.put("name", "admin");
-        requestBody.put("password", "newPassword");
+        requestBody.put("password", "admin123");
 
         SerenityRest.given()
                 .header("Content-Type", "application/json")
@@ -95,7 +95,7 @@ public class AuthAdmin {
     @Step("I send POST HTTP request logout_admin")
     public void sendPOSTHTTPRequestLogoutAdmin() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDA3MzU3fQ._0ZK2wJI3rT6R6X6KfFD1orWm4MCumwyAtL96CU6Kl0")
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDUxOTcxfQ.WZmAl4RnPTImx_k5i6ETbaZdh7ZHCtVpFtcEB0-413o")
                 .post(setPOSTAPIEndpointsLogout_admin());
     }
 
@@ -108,7 +108,7 @@ public class AuthAdmin {
     @Step("I send POST HTTP request token admin expired")
     public void sendPOSTHTTPRequestTokenAdminExpired() {
         SerenityRest.given()
-                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5NTMwODcyfQ.Y48gEivNVfSfXpmpPr9E8X8px3bdzZ4YuNoFXMYWZIE")
+                .header("Authorization", " Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjkwNDE4ODgxfQ.FlmTzQKBajTnKiy6j7qSYSoSpq61x3GW7WNAprisSss")
                 .post(setPOSTAPIEndpointsLogout_admin());
     }
 }

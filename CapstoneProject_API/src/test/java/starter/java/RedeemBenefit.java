@@ -94,7 +94,7 @@ public class RedeemBenefit {
     public void sendDPOSTHTTPRequestRedeemVoucher() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("phone", "082218807767");
-        requestBody.put("user_id", 5);
+        requestBody.put("user_id", 2);
         requestBody.put("voucher_id", 1);
         SerenityRest.given()
                 .header("Content-Type", "application/json")

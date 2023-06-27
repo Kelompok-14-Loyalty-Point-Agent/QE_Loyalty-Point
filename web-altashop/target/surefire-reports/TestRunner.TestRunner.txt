@@ -1,0 +1,279 @@
+-------------------------------------------------------------------------------
+Test set: TestRunner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 1.852 s <<< FAILURE! - in TestRunner.TestRunner
+As user i have be able to buy product(As user I want to buy product)  Time elapsed: 0.288 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Opennn browserrr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Opennn browserrr")
+public void i_opennn_browserrr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Openn websitee alta-shopp")
+public void openn_websitee_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click beli in items product")
+public void i_click_beli_in_items_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I can see keranjang to buy product")
+public void i_can_see_keranjang_to_buy_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I can bayar product")
+public void i_can_bayar_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+As user i have be able to see detail product(As user I want to see details product)  Time elapsed: 0.031 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Openn browserrr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Openn browserrr")
+public void i_openn_browserrr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open websitee alta-shopp")
+public void open_websitee_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click detail in items product")
+public void i_click_detail_in_items_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I can see detail product")
+public void i_can_see_detail_product() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+as a user i have be able to success login(Login Feature)  Time elapsed: 0.02 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Open browser" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browser")
+public void i_open_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shop")
+public void open_website_alta_shop() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I Enter a valid email and password")
+public void i_enter_a_valid_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click login button")
+public void i_click_login_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I am on the home page")
+public void i_am_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+as a user i have be able to invalid login(Login Feature)  Time elapsed: 0.011 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Open browser" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browser")
+public void i_open_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shop")
+public void open_website_alta_shop() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I Enter a invalid email and password")
+public void i_enter_a_invalid_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I click login buttonn")
+public void i_click_login_buttonn() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User see error message record not found")
+public void user_see_error_message_record_not_found() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+As user i have be able to logout in AltaShop(As user I want to logout in AltaShop)  Time elapsed: 0.021 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "i open browser - logout" is undefined. You can implement it using the snippet(s) below:
+
+@Given("i open browser - logout")
+public void i_open_browser_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@Given("i am on the home page - logout")
+public void i_am_on_the_home_page_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i input valid email - logout")
+public void i_input_valid_email_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i input valid password - logout")
+public void i_input_valid_password_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click login button - logout")
+public void i_click_login_button_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click account menu")
+public void i_click_account_menu() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("i click Logout")
+public void i_click_logout() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user successfull logout and redirect to login page")
+public void user_successfull_logout_and_redirect_to_login_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+As user i have be able to success crete account(Register Feature)  Time elapsed: 0.029 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Open browserr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browserr")
+public void i_open_browserr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shopp")
+public void open_website_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid name")
+public void user_input_valid_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid email")
+public void user_input_valid_email() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input valid password")
+public void user_input_valid_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user click register button")
+public void user_click_register_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user success to create account and redirect to login")
+public void user_success_to_create_account_and_redirect_to_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+As user i have be able to fail crete account(Register Feature)  Time elapsed: 0.021 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step "I Open browserr" is undefined. You can implement it using the snippet(s) below:
+
+@Given("I Open browserr")
+public void i_open_browserr() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Some other steps were also undefined:
+
+@When("Open website alta-shopp")
+public void open_website_alta_shopp() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields name")
+public void user_input_empty_fields_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields email")
+public void user_input_empty_fields_email() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user input empty fields password")
+public void user_input_empty_fields_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user click register button")
+public void user_click_register_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user fail to create account and redirect to login")
+public void user_fail_to_create_account_and_redirect_to_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

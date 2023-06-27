@@ -20,12 +20,12 @@ public class Transaction {
     public void sendPOSTHTTPrequestTransaction() {
         JSONObject requestBody = new JSONObject();
         requestBody.put("phone", "081382815860");
-        requestBody.put("stock_details_id", 1);
+        requestBody.put("stock_details_id", 2);
         requestBody.put("payment_method", "shoope");
         requestBody.put("user_id", 2);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwMjEzMjcwfQ.wjqxWHZq4vjgFx0gjAWCKIieujeghceWz38oZEGCjT0")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .body(requestBody.toJSONString())
                 .post(setPOSTAPIEndpointsTransation());
     }
@@ -44,7 +44,7 @@ public class Transaction {
         requestBody.put("voucher_id", 1);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwMjEzMjcwfQ.wjqxWHZq4vjgFx0gjAWCKIieujeghceWz38oZEGCjT0")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .body(requestBody.toJSONString())
                 .post(setPOSTAPIEndpointsTransation());
     }
@@ -60,10 +60,10 @@ public class Transaction {
         requestBody.put("phone", "081382815860");
         requestBody.put("stock_details_id", 1);
         requestBody.put("payment_method", "shoope");
-        requestBody.put("user_id", 2);
+        requestBody.put("user_id", 0);
         SerenityRest.given()
                 .header("Content-Type", "application/json")
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwMjEzMjcwfQ.wjqxWHZq4vjgFx0gjAWCKIieujeghceWz38oZEGCjT0")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .body(requestBody.toJSONString())
                 .post(setPOSTAPIEndpointsTransation());
     }
@@ -82,7 +82,7 @@ public class Transaction {
     @Step("I send GET HTTP request All user id_history")
     public void sendGETHTTPRequestAllUserId() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .get(setGETAPIEndpointsAllUserId());
     }
 
@@ -95,7 +95,7 @@ public class Transaction {
     @Step("I send GET HTTP request Transaction_ById")
     public void sendGETHTTPrequestTransactionById() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .get(setGETAPIEndpointsTransactionById());
     }
 
@@ -108,7 +108,7 @@ public class Transaction {
     @Step("I send GET HTTP request All By Stock_id")
     public void sendGETHTTPRequestAllByStockId() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .get(setGETAPIEndpointsAllByStockId());
     }
 
@@ -126,7 +126,7 @@ public class Transaction {
     @Step("I send GET HTTP request invalid url all_byidtransaction")
     public void sendGETHTTPRequestInvalidUrlransactionById() {
         SerenityRest.given()
-                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiZXhwIjoxNjg5MzM3Mzc1fQ.q4f-jtmhS2w3H2eWyXaRMVRmyHdl2RH6XFyS6ApYG_8")
+                .header("Authorization"," Bearer " + "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwicm9sZSI6ImN1c3RvbWVyIiwiZXhwIjoxNjkwNDUzNjg1fQ.UrYymbd41rXCYr2n0thcID9d_XiMVtjxpdl0abZZZwA")
                 .get(setGETEndpointsInvalidUrlTransactionById());
     }
 

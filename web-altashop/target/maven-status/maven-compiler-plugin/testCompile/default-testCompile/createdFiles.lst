@@ -1,0 +1,6 @@
+StepDef\buy.class
+StepDef\logout.class
+TestRunner\TestRunner.class
+StepDef\detail.class
+StepDef\register.class
+StepDef\login.class
