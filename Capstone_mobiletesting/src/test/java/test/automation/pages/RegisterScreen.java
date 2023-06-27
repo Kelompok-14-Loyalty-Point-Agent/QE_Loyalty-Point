@@ -2,10 +2,8 @@ package test.automation.pages;
 
 import io.appium.java_client.MobileBy;
 import net.thucydides.core.annotations.Step;
-
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-
 import test.automation.hooks.AppiumHelper;
 import test.automation.pageobject.BasePageObject;
 import com.github.javafaker.Faker;
@@ -43,7 +41,6 @@ public class RegisterScreen extends BasePageObject {
     By buttonCreateAnAccount() { 
         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Create an Account\"]");
     }
-
 
     By fieldAlertTerjadiKesalahan(){ 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Terjadi Kesalahan!\"]");

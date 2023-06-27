@@ -19,6 +19,8 @@ public class FaqScreen extends BasePageObject {
         return MobileBy.xpath("//android.view.View[@content-desc=\"1. Apa itu Kredit Data?\"]");
     }
 
+    //Scenario Outline: As a user i want to see the FAQ list
+
     @Step
     public void clickButtonFAQ(){
         click(buttonFAQ());

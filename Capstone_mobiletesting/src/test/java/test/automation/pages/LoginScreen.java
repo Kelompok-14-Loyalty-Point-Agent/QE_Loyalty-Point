@@ -86,7 +86,6 @@ public class LoginScreen extends BasePageObject {
         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Log Out\"]");
     }
 
-
     By fieldAlertEmail(){ 
         return MobileBy.xpath("//android.view.View[@content-desc=\"Email tidak tersedia\"]");
     }
